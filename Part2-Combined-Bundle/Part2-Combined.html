@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>combined</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        background-color: #232629;
+        color: #7a7c7d;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #7a7c7d;  padding-left: 4px; }
+    div.sourceCode
+      { color: #cfcfc2; background-color: #232629; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #cfcfc2; } /* Normal */
+    code span.al { color: #95da4c; background-color: #4d1f24; font-weight: bold; } /* Alert */
+    code span.an { color: #3f8058; } /* Annotation */
+    code span.at { color: #2980b9; } /* Attribute */
+    code span.bn { color: #f67400; } /* BaseN */
+    code span.bu { color: #7f8c8d; } /* BuiltIn */
+    code span.cf { color: #fdbc4b; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #3daee9; } /* Char */
+    code span.cn { color: #27aeae; font-weight: bold; } /* Constant */
+    code span.co { color: #7a7c7d; } /* Comment */
+    code span.cv { color: #7f8c8d; } /* CommentVar */
+    code span.do { color: #a43340; } /* Documentation */
+    code span.dt { color: #2980b9; } /* DataType */
+    code span.dv { color: #f67400; } /* DecVal */
+    code span.er { color: #da4453; text-decoration: underline; } /* Error */
+    code span.ex { color: #0099ff; font-weight: bold; } /* Extension */
+    code span.fl { color: #f67400; } /* Float */
+    code span.fu { color: #8e44ad; } /* Function */
+    code span.im { color: #27ae60; } /* Import */
+    code span.in { color: #c45b00; } /* Information */
+    code span.kw { color: #cfcfc2; font-weight: bold; } /* Keyword */
+    code span.op { color: #cfcfc2; } /* Operator */
+    code span.ot { color: #27ae60; } /* Other */
+    code span.pp { color: #27ae60; } /* Preprocessor */
+    code span.re { color: #2980b9; background-color: #153042; } /* RegionMarker */
+    code span.sc { color: #3daee9; } /* SpecialChar */
+    code span.ss { color: #da4453; } /* SpecialString */
+    code span.st { color: #f44f4f; } /* String */
+    code span.va { color: #27aeae; } /* Variable */
+    code span.vs { color: #da4453; } /* VerbatimString */
+    code span.wa { color: #da4453; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="cover">
+  <div class="eyebrow">Be10X · Learn Web Development with AI</div>
+  <h1>Part 2 — <em>Trainer &amp; Student</em> Handbook</h1>
+  <h2>The Mega Prompt warm-up · Supabase · Admin Dashboard · Git &amp; GitHub · GitHub Pages</h2>
+  <div class="meta">
+    <span class="pill">Mega Prompt</span>
+    <span class="pill">Prompts Library</span>
+    <span class="pill">Training Guide</span>
+  </div>
+  <div class="footer-meta">Combined edition · color-coded · syntax-highlighted · ready to share</div>
+</div>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#gift-the-mega-prompt--a-visual-glow-up-before-part-2"
+id="toc-gift-the-mega-prompt--a-visual-glow-up-before-part-2">🎁 The
+Mega Prompt — A Visual Glow-Up Before Part 2</a>
+<ul>
+<li><a href="#white_check_mark-before-you-paste--quick-checklist"
+id="toc-white_check_mark-before-you-paste--quick-checklist">✅ Before
+you paste — quick checklist</a></li>
+<li><a href="#brain-the-five-prompting-rules-still-apply"
+id="toc-brain-the-five-prompting-rules-still-apply">🧠 The five
+prompting rules (still apply)</a></li>
+<li><a href="#clipboard-the-mega-prompt--copy-everything-inside-the-box"
+id="toc-clipboard-the-mega-prompt--copy-everything-inside-the-box">📋
+THE MEGA PROMPT — copy everything inside the box</a></li>
+<li><a href="#art-what-this-prompt-changes-cheat-sheet-for-the-room"
+id="toc-art-what-this-prompt-changes-cheat-sheet-for-the-room">🎨 What
+this prompt changes (cheat-sheet for the room)</a></li>
+<li><a
+href="#white_check_mark-verify-it-works-do-this-together-in-class--3-minutes"
+id="toc-white_check_mark-verify-it-works-do-this-together-in-class--3-minutes">✅
+Verify it works (do this together in class — 3 minutes)</a></li>
+<li><a href="#compass-now-youre-ready-for-part-2"
+id="toc-compass-now-youre-ready-for-part-2">🧭 Now you're ready for Part
+2</a></li>
+</ul></li>
+<li><a href="#part-2--prompt-library-student-copy-paste-edition"
+id="toc-part-2--prompt-library-student-copy-paste-edition">Part 2 —
+Prompt Library (Student Copy-Paste Edition)</a>
+<ul>
+<li><a href="#gear-setup-do-once-before-prompt-1"
+id="toc-gear-setup-do-once-before-prompt-1">⚙️ Setup (do once before
+Prompt 1)</a></li>
+<li><a href="#gift-pre-flight-recommended--run-the-mega-prompt-first"
+id="toc-gift-pre-flight-recommended--run-the-mega-prompt-first">🎁
+Pre-flight (recommended) — Run the <strong>Mega Prompt</strong>
+first</a></li>
+<li><a href="#the-five-rules-still-apply--keep-them-visible"
+id="toc-the-five-rules-still-apply--keep-them-visible">The Five Rules
+(still apply — keep them visible)</a></li>
+</ul></li>
+<li><a href="#prompt-1--generate-the-database-table-sql"
+id="toc-prompt-1--generate-the-database-table-sql">Prompt 1 — Generate
+the database table (SQL)</a>
+<ul>
+<li><a
+href="#optional-prompt-1b--lock-the-table-down-with-row-level-security"
+id="toc-optional-prompt-1b--lock-the-table-down-with-row-level-security">(Optional)
+Prompt 1b — Lock the table down with Row-Level Security</a></li>
+</ul></li>
+<li><a href="#prompt-2--wire-the-contact-form-to-supabase"
+id="toc-prompt-2--wire-the-contact-form-to-supabase">Prompt 2 — Wire the
+contact form to Supabase</a></li>
+<li><a
+href="#prompt-3--the-debug-template-use-this-every-single-time-something-breaks"
+id="toc-prompt-3--the-debug-template-use-this-every-single-time-something-breaks">Prompt
+3 — The Debug Template (use this every single time something
+breaks)</a></li>
+<li><a href="#prompt-4--build-the-admin-dashboard"
+id="toc-prompt-4--build-the-admin-dashboard">Prompt 4 — Build the Admin
+Dashboard</a></li>
+<li><a href="#prompt-5--protect-your-secrets-before-the-first-git-push"
+id="toc-prompt-5--protect-your-secrets-before-the-first-git-push">Prompt
+5 — Protect your secrets BEFORE the first <code>git push</code></a>
+<ul>
+<li><a
+href="#hammer_and_wrench-push-the-project-to-github-terminal-commands--not-a-prompt"
+id="toc-hammer_and_wrench-push-the-project-to-github-terminal-commands--not-a-prompt">🛠️
+Push the project to GitHub (terminal commands — not a prompt)</a></li>
+<li><a href="#rocket-deploy-live-with-github-pages-six-clicks"
+id="toc-rocket-deploy-live-with-github-pages-six-clicks">🚀 Deploy live
+with GitHub Pages (six clicks)</a></li>
+</ul></li>
+<li><a href="#bonus--rapid-prototyping-timer-app-10-minutes-deployed"
+id="toc-bonus--rapid-prototyping-timer-app-10-minutes-deployed">Bonus —
+Rapid Prototyping: Timer App (10 minutes, deployed)</a>
+<ul>
+<li><a href="#prompt-6--timer-v1-build-it"
+id="toc-prompt-6--timer-v1-build-it">Prompt 6 — Timer v1 (build
+it)</a></li>
+<li><a href="#prompt-7--timer-v2-iterate-without-breaking"
+id="toc-prompt-7--timer-v2-iterate-without-breaking">Prompt 7 — Timer v2
+(iterate without breaking)</a></li>
+<li><a href="#mortar_board-you-did-it"
+id="toc-mortar_board-you-did-it">🎓 You did it</a></li>
+</ul></li>
+<li><a href="#part-2--training-guide-trainer-edition"
+id="toc-part-2--training-guide-trainer-edition">Part 2 — Training Guide
+(Trainer Edition)</a>
+<ul>
+<li><a
+href="#learn-web-development-with-ai--from-static-site-to-deployed-full-stack-app"
+id="toc-learn-web-development-with-ai--from-static-site-to-deployed-full-stack-app">Learn
+Web Development with AI — From Static Site to Deployed Full-Stack
+App</a></li>
+<li><a href="#audience-reminder-read-before-you-teach"
+id="toc-audience-reminder-read-before-you-teach">Audience reminder (read
+before you teach)</a></li>
+<li><a href="#the-bridge-from-part-1"
+id="toc-the-bridge-from-part-1">The Bridge from Part 1</a></li>
+<li><a href="#how-this-guide-is-structured"
+id="toc-how-this-guide-is-structured">How This Guide Is
+Structured</a></li>
+</ul></li>
+<li><a href="#gift-module-0--the-mega-prompt-warm-up--15-minutes"
+id="toc-gift-module-0--the-mega-prompt-warm-up--15-minutes">🎁 Module 0
+— The Mega Prompt (warm-up · ~15 minutes)</a>
+<ul>
+<li><a href="#module-1--full-stack-in-one-sentence"
+id="toc-module-1--full-stack-in-one-sentence">Module 1 — Full-Stack in
+One Sentence</a></li>
+<li><a href="#module-2--databases-for-humans"
+id="toc-module-2--databases-for-humans">Module 2 — Databases for
+Humans</a></li>
+<li><a href="#green_circle-qa-break-1-5-min"
+id="toc-green_circle-qa-break-1-5-min">🟢 Q&amp;A Break #1 (5
+min)</a></li>
+<li><a href="#module-3--generating-sql-with-ai"
+id="toc-module-3--generating-sql-with-ai">Module 3 — Generating SQL with
+AI</a></li>
+<li><a href="#module-4--connect-front-end-to-the-database"
+id="toc-module-4--connect-front-end-to-the-database">Module 4 — Connect
+Front-End to the Database</a></li>
+<li><a href="#module-5--ai-assisted-debugging-live"
+id="toc-module-5--ai-assisted-debugging-live">Module 5 — AI-Assisted
+Debugging (Live)</a></li>
+<li><a href="#green_circle-qa-break-2-10-min"
+id="toc-green_circle-qa-break-2-10-min">🟢 Q&amp;A Break #2 (10
+min)</a></li>
+<li><a href="#module-6--the-admin-dashboard"
+id="toc-module-6--the-admin-dashboard">Module 6 — The Admin
+Dashboard</a></li>
+<li><a href="#green_circle-qa-break-3-5-min"
+id="toc-green_circle-qa-break-3-5-min">🟢 Q&amp;A Break #3 (5
+min)</a></li>
+<li><a href="#module-7--version-control-with-git--github"
+id="toc-module-7--version-control-with-git--github">Module 7 — Version
+Control with Git &amp; GitHub</a></li>
+<li><a href="#module-8--deploy-with-github-pages"
+id="toc-module-8--deploy-with-github-pages">Module 8 — Deploy with
+GitHub Pages</a></li>
+<li><a href="#green_circle-qa-break-4-10-min"
+id="toc-green_circle-qa-break-4-10-min">🟢 Q&amp;A Break #4 (10
+min)</a></li>
+<li><a href="#module-9--rapid-prototyping-bonus-a-timer-app"
+id="toc-module-9--rapid-prototyping-bonus-a-timer-app">Module 9 — Rapid
+Prototyping Bonus: A Timer App</a></li>
+<li><a href="#module-10--wrap-up" id="toc-module-10--wrap-up">Module 10
+— Wrap-up</a></li>
+<li><a href="#green_circle-qa-break-5--final-15-min"
+id="toc-green_circle-qa-break-5--final-15-min">🟢 Q&amp;A Break #5 —
+Final (15 min)</a></li>
+<li><a href="#appendix--the-five-rules-restated-still-true"
+id="toc-appendix--the-five-rules-restated-still-true">Appendix — The
+Five Rules, restated (still true)</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="gift-the-mega-prompt--a-visual-glow-up-before-part-2">🎁 The
+Mega Prompt — A Visual Glow-Up Before Part 2</h1>
+<blockquote>
+<p><strong>When to run this:</strong> at the very start of Part 2,
+<strong>before</strong> Prompt 1. One copy-paste, one Cursor run, ~2–4
+minutes of generation time.</p>
+<p><strong>What it does:</strong> takes the 4-page portfolio you built
+in Part 1 and turns it into a <em>visually stunning, animated,
+polished</em> product — so when we add a database in Part 2, the
+experience already feels premium.</p>
+<p><strong>Why it exists:</strong> Part 1 proved you can build. The Mega
+Prompt proves AI + HTML + CSS + JS can be <em>beautiful</em>. Same five
+files. No new libraries. Runs locally with a simple file-open. The "wow"
+sets the tone for the rest of the day.</p>
+</blockquote>
+<hr />
+<h2 id="white_check_mark-before-you-paste--quick-checklist">✅ Before
+you paste — quick checklist</h2>
+<ol type="1">
+<li>The folder <code>aanya-portfolio</code> from Part 1 is open in
+Cursor.</li>
+<li>You can see all 6 files in the sidebar: <code>index.html</code>,
+<code>about.html</code>, <code>projects.html</code>,
+<code>contact.html</code>, <code>styles.css</code>,
+<code>script.js</code>.</li>
+<li>Cursor Chat is open (<code>Cmd + L</code> / <code>Ctrl + L</code>)
+and <strong>Agent</strong> mode is selected (top of the chat
+panel).</li>
+<li>You have a 2-minute coffee — Agent will edit multiple files and you
+should let it finish.</li>
+</ol>
+<hr />
+<h2 id="brain-the-five-prompting-rules-still-apply">🧠 The five
+prompting rules (still apply)</h2>
+<ol type="1">
+<li><strong>Numbers beat adjectives.</strong> Every visual choice below
+has a hex code, pixel value, or duration.</li>
+<li><strong>Persona first.</strong> The prompt tells the AI exactly who
+it is and who you are.</li>
+<li><strong>Consolidate.</strong> This is one prompt that does the work
+of fifteen.</li>
+<li><strong>Iterate with anchor + delta.</strong> We explicitly tell the
+AI what to keep and what to change.</li>
+<li><strong>Demand the "why".</strong> We ask for a short summary at the
+end so you learn from the changes.</li>
+</ol>
+<hr />
+<h2 id="clipboard-the-mega-prompt--copy-everything-inside-the-box">📋
+THE MEGA PROMPT — copy everything inside the box</h2>
+<blockquote>
+<p>Tip: click into the code block, press <code>Cmd/Ctrl + A</code> to
+select all, then <code>Cmd/Ctrl + C</code> to copy. Paste into Cursor
+Chat (Agent mode) and press Enter. Do <strong>not</strong> edit the
+prompt before sending — the specifics are what make it work the same way
+for everyone in the room.</p>
+</blockquote>
+<pre class="text"><code>You are a senior front-end designer-developer pair-programming with a complete
+beginner. We are upgrading an EXISTING 4-page static portfolio called
+&quot;Aanya Sharma — Senior UX Designer&quot;.
+
+THE EXISTING FILES (do not rename, do not delete, do not move):
+- index.html       (Home: hero + skills grid + footer)
+- about.html       (About: header + 2-col bio + timeline + footer)
+- projects.html    (Projects: header + 6 project cards + footer)
+- contact.html     (Contact: header + 2-col with contact card + form + footer)
+- styles.css       (single shared stylesheet using CSS variables in :root)
+- script.js        (vanilla JS: contact form handler + hamburger toggle)
+
+GOAL
+Turn this into a visually stunning, modern, animated portfolio while keeping
+100% of the existing content (every heading, paragraph, link, skill, project,
+timeline entry, and form field). Only LAYOUT, STYLE, and MICRO-INTERACTIONS
+should change. All four pages must continue to work when opened directly by
+double-clicking the HTML file (no build tools, no npm, no frameworks).
+
+GLOBAL DESIGN SYSTEM — overwrite the existing :root variables in styles.css
+with this exact token set, and refactor the stylesheet to use these tokens
+everywhere a colour, radius, shadow or duration appears:
+
+  /* Light theme (default) */
+  --bg:            #f7f7fb;
+  --surface:       #ffffff;
+  --surface-2:     #f1f1f8;
+  --text:          #0b0b14;
+  --text-muted:    #5b5b78;
+  --border:        rgba(11,11,20,.08);
+  --primary:       #6d5efc;     /* indigo-violet */
+  --primary-2:     #b06dfc;     /* magenta-violet */
+  --accent:        #22d3ee;     /* cyan */
+  --success:       #16a34a;
+  --danger:        #ef4444;
+  --shadow-sm:     0 2px 6px rgba(11,11,20,.06);
+  --shadow-md:     0 12px 32px -8px rgba(109,94,252,.18);
+  --shadow-lg:     0 30px 60px -20px rgba(109,94,252,.35);
+  --radius-sm:     10px;
+  --radius-md:     16px;
+  --radius-lg:     24px;
+  --radius-pill:   999px;
+  --ease:          cubic-bezier(.2,.7,.2,1);
+  --dur-fast:      180ms;
+  --dur:           320ms;
+  --dur-slow:      650ms;
+  --grad-hero:     linear-gradient(135deg,#6d5efc 0%,#b06dfc 50%,#22d3ee 100%);
+  --grad-text:     linear-gradient(135deg,#0b0b14 0%,#6d5efc 60%,#22d3ee 100%);
+
+Also add a [data-theme=&quot;dark&quot;] override block on :root with:
+  --bg:#08090f; --surface:#13141f; --surface-2:#1c1d2e;
+  --text:#f5f5fa; --text-muted:#9ca3b7;
+  --border:rgba(245,245,250,.10);
+  --shadow-sm:0 2px 8px rgba(0,0,0,.4);
+  --shadow-md:0 14px 40px -10px rgba(34,211,238,.20);
+  --shadow-lg:0 30px 80px -20px rgba(109,94,252,.45);
+  --grad-text: linear-gradient(135deg,#ffffff 0%,#b06dfc 60%,#22d3ee 100%);
+
+Add smooth theme transitions: body, *, *::before, *::after should transition
+background-color, color, border-color, box-shadow over var(--dur) var(--ease).
+
+NAVIGATION (all 4 pages — keep the existing structure, restyle only)
+- Glassmorphism: background rgba(255,255,255,.65) in light / rgba(19,20,31,.55)
+  in dark, backdrop-filter: blur(18px) saturate(140%), 1px bottom border using
+  var(--border).
+- Add a class &quot;is-scrolled&quot; to the &lt;nav&gt; when window.scrollY &gt; 8: shrinks
+  height from 72px → 56px, deepens the shadow to var(--shadow-md), and slightly
+  increases background opacity. Use a passive scroll listener in script.js
+  (append only — do not remove the existing hamburger code).
+- Brand text &quot;Aanya Sharma&quot; must use background:var(--grad-hero);
+  -webkit-background-clip:text; color:transparent; font-weight:700.
+- Add a circular theme-toggle button to the right of the nav links (sun ☀️
+  when in dark mode, moon 🌙 when in light mode). It must:
+    * Be 36×36px, var(--radius-pill), var(--surface-2) background, 1px border.
+    * On click, toggle html[data-theme] between &quot;light&quot; and &quot;dark&quot;.
+    * Persist the choice in localStorage under key &quot;aanya-theme&quot;.
+    * On page load, read localStorage; if missing, fall back to
+      window.matchMedia(&#39;(prefers-color-scheme: dark)&#39;).
+  Add this script to the TOP of script.js (so theme is set before paint) and
+  add the toggle button HTML to the &lt;nav&gt; of all 4 pages.
+- The active nav link gets a 2px-thick underline using var(--grad-hero) that
+  animates from 0% → 100% width over var(--dur).
+
+HERO (index.html only — keep all existing copy)
+- Replace the flat gradient background with a layered animated background:
+    1. Base: var(--surface).
+    2. Two large soft &quot;blobs&quot; using ::before and ::after on .hero, each 60vw
+       wide, filter: blur(80px), opacity .55, mix-blend-mode: screen in dark /
+       multiply in light. Colours: #6d5efc and #22d3ee. Animate them with a
+       12s ease-in-out infinite keyframe that gently translates them ±40px in
+       x and y (different phases) — call the keyframe &quot;blobFloat&quot;.
+    3. A subtle SVG noise overlay (data-URI, 120×120 fractal noise, opacity .04)
+       to add texture.
+- Headline (&quot;I design products people actually enjoy using.&quot;) uses
+  background: var(--grad-text); -webkit-background-clip:text; color:transparent;
+  font-size clamp(40px, 6vw, 84px); line-height 1.05.
+- Add a small animated &quot;scroll&quot; indicator at the bottom-centre of the hero:
+  a 22×36px rounded rectangle with a 4px dot inside that travels top→bottom
+  every 1.6s.
+- Primary CTA button: var(--grad-hero) background, white text, var(--radius-pill),
+  18px/36px padding, var(--shadow-md). On hover: translateY(-3px), shadow
+  becomes var(--shadow-lg), and a soft white &quot;shine&quot; sweeps from left to right
+  using a pseudo-element with linear-gradient(120deg, transparent, rgba(255,255,255,.4),
+  transparent) animated over 700ms.
+
+SKILLS GRID (index.html — keep all 6 cards and their copy)
+- Card background: var(--surface), 1px solid var(--border), var(--radius-lg),
+  28px padding, var(--shadow-sm).
+- On hover: translateY(-8px), box-shadow var(--shadow-lg), and the border
+  becomes a 1px transparent border with a gradient ring using
+  background-clip: padding-box, border-image: var(--grad-hero) 1.
+- Each icon sits inside a 56×56px var(--surface-2) rounded square (radius-md),
+  font-size 28px, with a soft glow ring (box-shadow: 0 0 0 6px rgba(109,94,252,.08)).
+- Add a faint &quot;shine-on-hover&quot; diagonal sweep across each card using
+  ::after with transform: translateX(-100%) → translateX(100%) on hover,
+  var(--dur-slow), var(--ease).
+
+ABOUT PAGE
+- Page header: keep the existing h1 and subtitle. Add an animated SVG &quot;blob&quot;
+  background behind the h1 (same colours as hero, much smaller, opacity .25).
+- Two-column section: portrait gets a 8px gradient border using
+  border-image: var(--grad-hero) 1, radius-lg, var(--shadow-lg), and a subtle
+  tilt of -3deg on desktop only (&gt;900px). On hover, tilt smoothly returns to 0.
+- Add a &quot;stats strip&quot; ABOVE the two-column section with three counters:
+    &quot;5+ years experience&quot;   · &quot;30+ shipped projects&quot;   · &quot;12 awards&quot;
+  Each number must animate from 0 to its final value over 1.4s when the strip
+  scrolls into view (use IntersectionObserver). Use existing-content tone of
+  voice; numbers above are placeholders consistent with the bio.
+- Timeline: keep the 4 entries. Restyle to a vertical &quot;rail&quot; using a
+  var(--grad-hero) 2px line; each year dot is a 14px circle filled with
+  var(--primary) and a 6px outer glow. Each row fades+slides in from the left
+  when it enters the viewport (IntersectionObserver, .reveal class, see GLOBAL
+  ANIMATION).
+
+PROJECTS PAGE
+- Replace placehold.co URLs only if needed for new background colours that
+  match the system. Keep the existing 6 titles, descriptions, tags, and the
+  bg colours 4f46e5, 0ea5e9, 10b981, f59e0b, ef4444, 8b5cf6.
+- Card upgrade:
+    * Image area becomes a 16:9 wrapper with overflow:hidden + radius-md.
+    * On card hover, the image scales to 1.06 over var(--dur).
+    * A linear-gradient(180deg, transparent 55%, rgba(0,0,0,.55) 100%) overlay
+      appears on hover, and the &quot;View Case Study →&quot; link slides up from
+      translateY(8px) → 0 with opacity 0 → 1.
+    * Card itself uses var(--surface), radius-lg, 1px var(--border), tilts very
+      slightly on hover: rotate(-.4deg) translateY(-6px), shadow var(--shadow-lg).
+- Tags: pill style stays, but on hover they swap to var(--grad-hero) background
+  with white text over var(--dur-fast).
+- Add a thin horizontal &quot;tag marquee&quot; ABOVE the grid: a single row of small
+  pills (&quot;Fintech · Edtech · Healthcare · B2B · A11y · Design Systems ·
+  Marketplace · Data Viz · Internal Tools · UX Writing&quot;) that scrolls right→left
+  infinitely over 30s using a CSS @keyframes (no JS). Duplicate the row twice
+  inside a wrapper with overflow:hidden so the loop appears seamless. Pause on
+  hover.
+
+CONTACT PAGE
+- Left contact card upgrades to a &quot;frosted&quot; card: var(--surface), radius-lg,
+  1px var(--border), var(--shadow-md). Replace the social links list with
+  three large icon-buttons (LinkedIn 💼, Dribbble 🎨, Twitter 🐦) — each a
+  56×56 rounded square with var(--surface-2) bg, hover scales to 1.08 and
+  background fills with var(--grad-hero) (white emoji stays).
+- Form inputs:
+    * Float-label style: label sits inside the input at 50% Y; on focus or when
+      the input has a value, the label scales to .82 and moves to the top-left
+      corner with a var(--bg) background chip. Implement using CSS only via
+      :placeholder-shown and :not(:placeholder-shown) — give each input a
+      placeholder=&quot; &quot; (single space) so the trick works.
+    * Inputs: var(--surface), 1.5px var(--border), radius-md, 16px padding,
+      transition border-color and box-shadow. On focus: border var(--primary),
+      box-shadow 0 0 0 4px rgba(109,94,252,.18).
+- Submit button: var(--grad-hero), white, var(--radius-pill), 14px/28px
+  padding, var(--shadow-md). On hover: same &quot;shine sweep&quot; as the hero CTA.
+- DO NOT change the existing JS submit handler logic — only restyle. Keep the
+  success-message element and id intact so Part 2 can wire it to the database.
+
+FOOTER (all 4 pages)
+- Background var(--surface-2), top border 1px var(--border).
+- Add a single horizontal accent line above the columns using var(--grad-hero),
+  height 2px, opacity .6.
+- Restyle the social emoji list to match the contact page (compact icon
+  buttons, same hover behaviour).
+- Keep the copyright text but place a small animated heart (♥) that pulses
+  every 1.4s next to &quot;Built with curiosity and Cursor.&quot;
+
+GLOBAL ANIMATIONS (append to script.js — do not remove existing code)
+1. Reveal-on-scroll:
+   - Add a vanilla IntersectionObserver that watches every element with class
+     &quot;.reveal&quot;. When it enters the viewport, add &quot;.is-visible&quot; and unobserve it.
+   - In styles.css, &quot;.reveal&quot; starts with opacity 0 and transform translateY(28px),
+     and &quot;.reveal.is-visible&quot; goes to opacity 1 / translateY(0) with var(--dur-slow)
+     var(--ease).
+   - Add the &quot;reveal&quot; class (in the HTML) to:
+       * Every skill card on index.html.
+       * Each timeline entry on about.html (with staggered transition-delay:
+         50ms, 150ms, 250ms, 350ms).
+       * Every project card on projects.html (staggered 50ms × index).
+       * The contact card and form on contact.html.
+2. Top page scroll-progress bar:
+   - 3px tall, fixed top:0, full width, background var(--grad-hero), width
+     scales from 0% → 100% based on (scrollTop / (scrollHeight - innerHeight)).
+   - Inject the bar element via script on every page (so we don&#39;t have to edit
+     each HTML manually). Use requestAnimationFrame to throttle.
+3. Number counter for the About-page stats strip (already described above).
+4. Page-load splash:
+   - On every page load, briefly show a centred minimal splash: black-out
+     overlay with the gradient brand &quot;Aanya Sharma&quot; fading in then out over
+     900ms total, then removing itself from the DOM. Inject via JS so we don&#39;t
+     touch every HTML file.
+5. Custom focus-visible ring: any focused interactive element gets
+   outline: 2px solid var(--primary); outline-offset: 3px; border-radius
+   inherited. Skip the default browser dotted ring.
+
+TYPOGRAPHY
+- Keep the existing Google Fonts import (Inter + Fraunces). Add weight 800 to
+  Fraunces if not already requested. Use letter-spacing: -.02em on h1/h2 for a
+  modern editorial feel.
+
+ACCESSIBILITY (non-negotiable)
+- All decorative animations must respect
+    @media (prefers-reduced-motion: reduce) { *, ::before, ::after {
+      animation-duration: .001ms !important; transition-duration: .001ms !important;
+      animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
+- Theme toggle must have aria-label that updates (&quot;Switch to dark mode&quot; /
+  &quot;Switch to light mode&quot;).
+- All colour combinations must keep contrast ratio ≥ 4.5 for body text.
+  If any token combo fails, pick the closer-to-pure variant and tell me what
+  you adjusted.
+
+CODE ORGANISATION
+- All new CSS goes under clearly labelled section comments inserted in this
+  order at the end of styles.css:
+    /* === DESIGN TOKENS === */
+    /* === GLOBAL ANIMATIONS &amp; UTILITIES === */
+    /* === NAV (GLASS) === */
+    /* === HERO (BLOBS) === */
+    /* === SKILLS (UPGRADED) === */
+    /* === ABOUT (STATS + TIMELINE) === */
+    /* === PROJECTS (MARQUEE + CARDS) === */
+    /* === CONTACT (FROSTED + FLOAT-LABELS) === */
+    /* === FOOTER (UPGRADED) === */
+    /* === REDUCED MOTION === */
+  Leave the existing per-section styles in place; override or extend them
+  cleanly — do not delete prior rules unless they directly conflict.
+- New JS in script.js goes under banner comments in this order:
+    // === THEME (must run first) ===
+    // === SCROLL PROGRESS BAR ===
+    // === REVEAL ON SCROLL ===
+    // === NAV SHRINK ON SCROLL ===
+    // === ABOUT STATS COUNTERS ===
+    // === PAGE-LOAD SPLASH ===
+  Preserve the existing hamburger toggle and contact-form handler intact.
+
+DELIVERABLES — what I expect when you finish
+1. All 4 HTML files updated (theme toggle in nav, reveal classes on the right
+   elements, marquee on projects, stats strip on about, splash injected by JS
+   so no HTML change needed for it).
+2. styles.css extended with all sections above.
+3. script.js extended with all behaviours above (existing code preserved).
+4. A short summary at the end of your message containing:
+   - The list of files you touched.
+   - Three things to test in the browser (e.g., &quot;toggle theme&quot;, &quot;scroll the
+     home page&quot;, &quot;submit the contact form&quot;).
+   - One sentence on the single most impactful change visually, and why.
+
+CONSTRAINTS / NON-NEGOTIABLES
+- No new libraries, no npm, no build step. Pure HTML/CSS/JS that runs by
+  double-clicking the file.
+- Do not change copy, headings, link targets, form field names, or element IDs.
+- Do not break the Part 1 hamburger menu or the contact-form success message.
+- Mobile responsiveness from Part 1 must continue to work; verify by sketching
+  any new media-query overrides at the bottom of styles.css.</code></pre>
+<hr />
+<h2 id="art-what-this-prompt-changes-cheat-sheet-for-the-room">🎨 What
+this prompt changes (cheat-sheet for the room)</h2>
+<p>Use this list to follow along while Cursor edits — and to debug if
+something looks off.</p>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>What changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟧 <strong>HTML</strong> (all 4 pages)</td>
+<td>A theme-toggle button is added to the nav. The <code>.reveal</code>
+class is sprinkled on cards, timeline rows, contact panels. Projects
+page gets a marquee strip above the grid. About page gets a stats strip
+above the two-column section. No copy or link is touched.</td>
+</tr>
+<tr>
+<td>🟦 <strong>CSS</strong> (<code>styles.css</code>)</td>
+<td>New <code>:root</code> design tokens (colours, shadows, radii,
+easings, gradients) + a <code>[data-theme="dark"]</code> override.
+Glassmorphism nav, animated hero blobs + noise, upgraded skill cards
+with gradient borders &amp; shine, frosted contact card, float-label
+inputs, project marquee + image-zoom hover, scroll-progress bar styles,
+<code>.reveal</code> keyframes, reduced-motion guard. Everything
+appended under clearly labelled section comments.</td>
+</tr>
+<tr>
+<td>🟨 <strong>JavaScript</strong> (<code>script.js</code>)</td>
+<td>Six new modules added on top of Part 1 code: (1) theme persistence
+via <code>localStorage</code>, (2) scroll-progress bar, (3)
+<code>IntersectionObserver</code>-driven reveal animations, (4)
+nav-shrink on scroll, (5) animated number counters on About, (6)
+one-time page-load splash. Existing hamburger toggle and form handler
+are left untouched.</td>
+</tr>
+<tr>
+<td>🟩 <strong>New files</strong></td>
+<td>None. We re-use the same 6 files from Part 1.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2
+id="white_check_mark-verify-it-works-do-this-together-in-class--3-minutes">✅
+Verify it works (do this together in class — 3 minutes)</h2>
+<ol type="1">
+<li>Double-click <code>index.html</code> — you should see:
+<ul>
+<li>A subtle splash with the brand name, then the home page.</li>
+<li>The hero gradient blobs gently float.</li>
+<li>Skill cards lift on hover with a glowing border.</li>
+<li>The nav shrinks when you scroll down.</li>
+</ul></li>
+<li>Click the moon/sun button in the nav — entire site flips between
+<strong>dark</strong> and <strong>light</strong>. Refresh — your choice
+is remembered.</li>
+<li>Open <code>about.html</code> — the three counters animate from 0
+when you scroll to them; the timeline rows fade in one after
+another.</li>
+<li>Open <code>projects.html</code> — tags marquee scrolls in the
+background, images zoom subtly on hover, "View Case Study →" slides
+up.</li>
+<li>Open <code>contact.html</code> — labels float when you focus an
+input; submit a test message → green success appears (same behaviour as
+Part 1; we wire it to a real database in Prompt 2 of Part 2).</li>
+<li>Resize the window to phone width — hamburger still works, layouts
+still stack.</li>
+</ol>
+<p>If any of these feel off, jump to the <strong>Debug template</strong>
+in <code>prompts.md</code> (Prompt 3 of Part 2) — paste the exact error
+or describe the symptom and Cursor will surgically fix it.</p>
+<hr />
+<h2 id="compass-now-youre-ready-for-part-2">🧭 Now you're ready for Part
+2</h2>
+<p>Open <code>prompts.md</code> and start with <strong>Prompt 1 —
+Generate the database SQL</strong>.</p>
+<h1 id="part-2--prompt-library-student-copy-paste-edition">Part 2 —
+Prompt Library (Student Copy-Paste Edition)</h1>
+<blockquote>
+<p><strong>How to use this file</strong></p>
+<ol type="1">
+<li>Open it side-by-side with Cursor (Agent mode).</li>
+<li>Run prompts <strong>in order</strong>, top to bottom.</li>
+<li>For each prompt:
+<ul>
+<li>read the short <strong>Goal</strong> (one line — what we're trying
+to achieve),</li>
+<li>copy the <strong>Prompt</strong> box into Cursor Chat and press
+Enter,</li>
+<li>glance at the <strong>What this changes in your project</strong>
+card so you know what HTML / CSS / JS pieces are moving,</li>
+<li>skim <strong>Why the prompt is written this way</strong> so you
+build prompt-engineering instinct, not just muscle memory,</li>
+<li>run the quick <strong>Verify</strong> step before moving on.</li>
+</ul></li>
+<li>If anything fails, jump to <strong>Prompt 3 — The Debug
+Template</strong> and follow it.</li>
+</ol>
+</blockquote>
+<blockquote>
+<p><strong>You'll still have your <code>aanya-portfolio</code> folder
+from Part 1.</strong> We continue right where we stopped.</p>
+</blockquote>
+<hr />
+<h2 id="gear-setup-do-once-before-prompt-1">⚙️ Setup (do once before
+Prompt 1)</h2>
+<ol type="1">
+<li>Create a free <strong>Supabase</strong> account → <a
+href="https://supabase.com">supabase.com</a> → sign in with GitHub.</li>
+<li>Click <strong>New project</strong> → name
+<code>web-dev-with-ai</code> → save the DB password somewhere safe →
+pick the region closest to you (Mumbai / Singapore for India).</li>
+<li>Create a free <strong>GitHub</strong> account → <a
+href="https://github.com">github.com</a> (if you don't have one).</li>
+<li>Install <strong>Git</strong> on your laptop:
+<ul>
+<li><strong>macOS:</strong> <code>brew install git</code></li>
+<li><strong>Windows:</strong> download from <a
+href="https://git-scm.com/download/win">git-scm.com/download/win</a></li>
+</ul></li>
+<li>Once installed, run these two commands once in any terminal — they
+tell Git who you are:
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name  <span class="st">&quot;Your Name&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">&quot;you@example.com&quot;</span></span></code></pre></div></li>
+</ol>
+<hr />
+<h2 id="gift-pre-flight-recommended--run-the-mega-prompt-first">🎁
+Pre-flight (recommended) — Run the <strong>Mega Prompt</strong>
+first</h2>
+<p>Open <code>mega-prompt.md</code> (next to this file). It contains ONE
+big prompt that turns your Part 1 portfolio into a visually stunning,
+animated, dark-mode-ready product in a single Cursor run. Do this
+<strong>before</strong> Prompt 1 below so the rest of Part 2 lands on a
+beautiful canvas.</p>
+<p>When you're back, continue here.</p>
+<hr />
+<h2 id="the-five-rules-still-apply--keep-them-visible">The Five Rules
+(still apply — keep them visible)</h2>
+<ol type="1">
+<li><strong>Numbers beat adjectives.</strong> ("16px padding", not "good
+spacing".)</li>
+<li><strong>Persona before prompt.</strong> Tell the AI who it is and
+who you are.</li>
+<li><strong>Consolidate.</strong> One big prompt with bullet points
+beats five small prompts.</li>
+<li><strong>Iterate with anchor + delta.</strong> "<em>This part</em> is
+too big — make it 18px."</li>
+<li><strong>Demand the "why".</strong> Ask the AI to explain its choices
+in plain English.</li>
+</ol>
+<hr />
+<h1 id="prompt-1--generate-the-database-table-sql">Prompt 1 — Generate
+the database table (SQL)</h1>
+<p><strong>Goal:</strong> create a <code>form</code> table in Supabase
+that will store every contact-form message your website receives.</p>
+<p><strong>Prompt — copy into Cursor Chat (or ChatGPT — either
+works):</strong></p>
+<pre class="text"><code>You are a Postgres expert helping a complete beginner.
+
+I am using Supabase. Please write ONE single CREATE TABLE statement for a table
+named &quot;form&quot; that will store contact-form submissions from my website.
+
+The columns I need are:
+1. id          — bigint, auto-incrementing, primary key
+2. created_at  — timestamptz, default now()
+3. full_name   — text, not null
+4. email       — text, not null
+5. subject     — text, not null
+6. message     — text, not null
+7. is_read     — boolean, default false, not null
+
+After the SQL, add a 3-line plain-English explanation of what each column does
+and why we chose these data types — pretend you&#39;re explaining it to someone
+who has never seen SQL before.</code></pre>
+<blockquote>
+<p><strong>After Cursor / ChatGPT gives you the SQL:</strong> In
+Supabase → left sidebar → <strong>SQL Editor</strong> → paste →
+<strong>Run</strong>. Then go to <strong>Table Editor</strong> and
+confirm the <code>form</code> table appears with all 7 columns.</p>
+</blockquote>
+<p><strong>What this changes in your project:</strong></p>
+<ul>
+<li>🟧 <strong>HTML / CSS / JS:</strong> nothing yet — we're only
+creating the database.</li>
+<li>🟪 <strong>Supabase (cloud):</strong> a new table named
+<code>form</code> with 7 columns is created in your project.</li>
+</ul>
+<p><strong>Why the prompt is written this way (prompt-engineering
+lens):</strong></p>
+<ul>
+<li>✅ <strong>Persona</strong> — "Postgres expert helping a complete
+beginner" → output is correct <em>and</em> explained simply.</li>
+<li>✅ <strong>Numbered, exact specs</strong> — every column has a name
++ type → AI cannot guess wrong.</li>
+<li>✅ <strong>Demand the "why"</strong> (Rule #5) → you learn while it
+builds.</li>
+</ul>
+<p><strong>Verify:</strong> in Supabase Table Editor you can see the
+<code>form</code> table; click "Insert row" to confirm the columns are
+correct, then cancel — we'll insert through our website.</p>
+<hr />
+<h2
+id="optional-prompt-1b--lock-the-table-down-with-row-level-security">(Optional)
+Prompt 1b — Lock the table down with Row-Level Security</h2>
+<blockquote>
+<p>Run this only if you want production-grade security from day one.
+Otherwise the trainer will disable RLS for the classroom and we'll cover
+hardening in homework.</p>
+</blockquote>
+<pre class="text"><code>For my Supabase table &quot;form&quot;, please write the exact SQL to:
+1. Enable row-level security on the table.
+2. Add a policy that allows ANYONE (the &quot;anon&quot; role) to INSERT a new row.
+3. Add a policy that allows ONLY authenticated users to SELECT rows.
+
+Explain each policy in one sentence so a beginner can repeat it back.</code></pre>
+<p><strong>Why this prompt:</strong> "anon insert, authenticated select"
+is the standard pattern for "public submits, admin reads". Asking the AI
+to <em>explain each policy</em> converts a config step into a
+lesson.</p>
+<hr />
+<h1 id="prompt-2--wire-the-contact-form-to-supabase">Prompt 2 — Wire the
+contact form to Supabase</h1>
+<p><strong>Goal:</strong> stop the contact form from lying. Right now it
+says "message sent" and the data evaporates. After this prompt, every
+submission lands as a real row in your Supabase table.</p>
+<p><strong>Before you paste:</strong> open <strong>Supabase → Project
+Settings → API</strong> and copy two values into a sticky note:</p>
+<ul>
+<li><strong>Project URL</strong> (looks like
+<code>https://abcd1234.supabase.co</code>)</li>
+<li><strong>anon public key</strong> (a long string starting with
+<code>eyJ…</code>)</li>
+</ul>
+<p><strong>Prompt — copy into Cursor Chat (Agent mode):</strong></p>
+<pre class="text"><code>You are pair-programming with a complete beginner. We are switching the
+contact form on contact.html from a &quot;fake success message&quot; to a &quot;real
+database insert&quot; using Supabase.
+
+Please do the following, in order:
+
+1. In contact.html, inside the &lt;head&gt;, add the Supabase JS client from the
+   official CDN:
+       &lt;script src=&quot;https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2&quot;&gt;&lt;/script&gt;
+
+2. Create a NEW file called supabase-config.js in the project root with EXACTLY
+   this content (we will paste real keys ourselves afterwards):
+
+       const SUPABASE_URL = &quot;PASTE_YOUR_URL_HERE&quot;;
+       const SUPABASE_ANON_KEY = &quot;PASTE_YOUR_ANON_KEY_HERE&quot;;
+       const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+3. In contact.html, link supabase-config.js BEFORE script.js (order matters,
+   because script.js will use the supabaseClient variable created in
+   supabase-config.js).
+
+4. In script.js, update the EXISTING contact-form submit handler (do not
+   duplicate it, do not delete the existing validation):
+   - Read the four field values: full_name, email, subject, message.
+   - Call:  await supabaseClient.from(&#39;form&#39;).insert([{ full_name, email,
+            subject, message }])
+   - If the response contains an error → keep the form visible and show a
+     red error message: &quot;Something went wrong. Please try again.&quot;
+   - If the response is successful → hide the form and show the existing
+     green success message, then reset the form fields.
+   - console.log the full response object so we can debug if needed.
+
+5. Add a plain-English comment above every new block of code so a beginner
+   reading the file later can follow the logic.
+
+Important guardrails:
+- Do NOT remove or duplicate the existing submit listener — extend it.
+- Do NOT change any element IDs or the success message text.
+- Do NOT change the file names.</code></pre>
+<blockquote>
+<p><strong>After Cursor finishes:</strong> open
+<code>supabase-config.js</code> and replace the two
+<code>PASTE_..._HERE</code> strings with your real URL and anon key.
+Save. Reload <code>contact.html</code> → submit a test message → switch
+to Supabase Table Editor → your row appears live. 🎉</p>
+</blockquote>
+<p><strong>What this changes in your project:</strong></p>
+<ul>
+<li>🟧 <strong>HTML</strong> (<code>contact.html</code>): one new
+<code>&lt;script&gt;</code> tag for the Supabase CDN in
+<code>&lt;head&gt;</code>; one new
+<code>&lt;script src="supabase-config.js"&gt;</code> placed
+<strong>before</strong> the existing
+<code>&lt;script src="script.js"&gt;</code>.</li>
+<li>🟦 <strong>CSS</strong> (<code>styles.css</code>): nothing changes
+(the red error message can re-use existing styles).</li>
+<li>🟨 <strong>JavaScript</strong> (<code>script.js</code>): the
+existing submit handler is extended — it now reads form values, calls
+Supabase, and branches into success / error paths.</li>
+<li>🟩 <strong>New file:</strong> <code>supabase-config.js</code>
+holding your project URL + anon key.</li>
+<li>🟪 <strong>Supabase (cloud):</strong> every submission creates a new
+row in the <code>form</code> table.</li>
+</ul>
+<p><strong>Why the prompt is written this way (prompt-engineering
+lens):</strong></p>
+<ul>
+<li>✅ <strong>Explicit script order</strong> ("BEFORE script.js") —
+this is the #1 invisible bug for beginners; calling it out in the prompt
+avoids it entirely.</li>
+<li>✅ <strong>Both success AND error paths</strong> specified up-front
+— production-grade UX in one shot.</li>
+<li>✅ <strong>"Append, do not duplicate"</strong> — a
+<em>scope-lock</em> phrase that stops the AI from rewriting your Part 1
+code.</li>
+<li>✅ <strong>"Do not change element IDs"</strong> — Part 2 prompts
+later depend on those IDs; we're future-proofing.</li>
+</ul>
+<p><strong>Verify:</strong></p>
+<ol type="1">
+<li>Submit a test message on <code>contact.html</code> — green success
+appears.</li>
+<li>Switch to Supabase → Table Editor → refresh → your row is there with
+<code>is_read = false</code>.</li>
+<li>Open browser DevTools → Console → you should see the response object
+logged.</li>
+</ol>
+<hr />
+<h1
+id="prompt-3--the-debug-template-use-this-every-single-time-something-breaks">Prompt
+3 — The Debug Template (use this every single time something
+breaks)</h1>
+<p><strong>Goal:</strong> turn every red error in the browser console
+into a one-minute fix + a one-line lesson.</p>
+<p><strong>Prompt — copy into Cursor Chat whenever you hit an
+error:</strong></p>
+<pre class="text"><code>You are pair-programming with a complete beginner. I am stuck.
+
+I&#39;m getting this exact error in [filename] when I try to [action]:
+
+[paste the exact red text from the browser console here, nothing reworded]
+
+Here is the relevant file (or feel free to read it directly):
+[paste the file contents OR @-mention the file in Cursor]
+
+Please:
+1. Explain in ONE sentence what this error actually means, in plain English.
+2. Identify the root cause.
+3. Give me the precise fix — show ONLY the corrected lines, not the whole file.
+4. Tell me ONE habit I could adopt to avoid this class of error in future.</code></pre>
+<p><strong>Why the prompt is written this way (prompt-engineering
+lens):</strong></p>
+<ul>
+<li>✅ <strong>Persona reminder</strong> — keeps the language
+beginner-friendly.</li>
+<li>✅ <strong>Exact error text</strong> — paraphrasing loses the
+keyword the AI needs to recognise the bug.</li>
+<li>✅ <strong>"Corrected lines, not the whole file"</strong> — surgical
+fix; less risk of accidental regressions.</li>
+<li>✅ <strong>"One habit"</strong> — turns every bug into a 30-second
+learning loop. Compounds over a career.</li>
+</ul>
+<p><strong>How to find the exact error text:</strong></p>
+<ul>
+<li>Press <code>F12</code> (or right-click → <strong>Inspect</strong>) →
+<strong>Console</strong> tab.</li>
+<li>The red lines are errors. Click the small triangle to expand. Copy
+the <em>first</em> red line — that's the original error; everything else
+is the trail.</li>
+</ul>
+<hr />
+<h1 id="prompt-4--build-the-admin-dashboard">Prompt 4 — Build the Admin
+Dashboard</h1>
+<p><strong>Goal:</strong> create a private page
+(<code>admin.html</code>) where you can see every contact-form message,
+mark it as read, and filter "unread only" — all reading live from your
+Supabase table.</p>
+<p><strong>Prompt — copy into Cursor Chat (Agent mode):</strong></p>
+<pre class="text"><code>You are pair-programming with a complete beginner. We are adding an admin
+dashboard to the existing portfolio. Please reuse the same design system from
+the existing styles.css — no new fonts, no new colour scheme.
+
+Create a NEW page admin.html in the project root.
+
+NAV (re-use, do not redesign):
+- Copy the EXACT navigation bar from index.html.
+- Add a 5th link &quot;Admin&quot; pointing to admin.html.
+- Mark the &quot;Admin&quot; link as active ONLY on admin.html (don&#39;t touch the other
+  4 pages&#39; nav for now).
+- Link styles.css, then supabase-config.js, then script.js — in that order
+  (because script.js uses supabaseClient).
+
+PAGE STRUCTURE:
+1. Page header: h1 &quot;Inbox&quot; + small subtitle &quot;All contact-form messages,
+   newest first.&quot;
+2. A toolbar row directly below the header:
+   - LEFT: a total-message counter (e.g., &quot;📬 12 messages&quot;).
+   - RIGHT: a toggle labelled &quot;Unread only&quot; (use a styled checkbox).
+3. A responsive grid of message cards:
+   - CSS Grid, auto-fit, minmax(320px, 1fr), 20px gap.
+
+EACH MESSAGE CARD:
+- Top row: subject (h3, 18px) on the left; relative time on the right
+  (e.g., &quot;2 hours ago&quot;). Use a small helper function timeAgo(date) for the
+  relative time string.
+- Sender line: &quot;full_name · email&quot; (14px, muted colour).
+- Body: the message text (15px). Clamp to a maximum of 4 lines using
+  -webkit-line-clamp (with the standard overflow:hidden + display:-webkit-box
+  setup). Show ellipsis if it overflows.
+- Bottom-right: a &quot;Mark as Read&quot; button (small, primary style, matches
+  existing button styles in styles.css).
+- VISUAL STATES:
+    - UNREAD card → 4px solid left border in soft purple (#a78bfa) + white
+      background.
+    - READ card   → grey left border + soft grey background (#f3f4f6) + 60%
+      opacity to feel &quot;out of the way&quot;.
+
+JAVASCRIPT (append to script.js — do NOT remove or alter the existing
+hamburger or contact-form code; only run the admin code if the inbox grid
+element actually exists on the current page):
+
+1. On admin.html load, fetch all rows from the &quot;form&quot; table ordered by
+   created_at DESC, then render them as cards in the grid.
+2. Update the total counter with the row count.
+3. Wire the &quot;Mark as Read&quot; button on each card:
+   - Run a Supabase UPDATE setting is_read = true for that row&#39;s id.
+   - On success, update ONLY that one card&#39;s class / styles (no full reload,
+     no re-fetch).
+4. Wire the &quot;Unread only&quot; toggle:
+   - When checked, hide every card that already has the &quot;is-read&quot; class
+     (use a CSS class on the grid, not a re-fetch).
+5. Use a tiny helper function timeAgo(date) that returns &quot;just now&quot;, &quot;5
+   minutes ago&quot;, &quot;2 hours ago&quot;, &quot;3 days ago&quot;, &quot;21 May 2026&quot;.
+6. Comment every block in plain English.
+
+Important guardrails:
+- Reuse colours, spacing and shadow tokens from the existing :root variables.
+- Do not break any existing page or behaviour.</code></pre>
+<p><strong>What this changes in your project:</strong></p>
+<ul>
+<li>🟧 <strong>HTML</strong> (<code>admin.html</code>, new): a brand-new
+page with the same nav (plus an "Admin" link), a header, a toolbar, and
+an empty grid container that JavaScript fills.</li>
+<li>🟦 <strong>CSS</strong> (<code>styles.css</code>): a new
+<code>/* === ADMIN === */</code> section is appended with
+<code>.admin-grid</code>, <code>.admin-card</code>,
+<code>.admin-card.is-read</code>, the line-clamp rule, and the "Unread
+only" filter rule.</li>
+<li>🟨 <strong>JavaScript</strong> (<code>script.js</code>): a new block
+(gated on "does the admin grid exist on this page?") that fetches rows
+from Supabase, renders cards, handles "Mark as Read" updates, and
+toggles the unread filter. Plus a small <code>timeAgo()</code>
+helper.</li>
+<li>🟪 <strong>Supabase:</strong> every "Mark as Read" click sends an
+<code>UPDATE</code> query; the inbox load sends a
+<code>SELECT</code>.</li>
+</ul>
+<p><strong>Why the prompt is written this way (prompt-engineering
+lens):</strong></p>
+<ul>
+<li>✅ <strong>"Reuse the existing nav and design tokens"</strong> —
+keeps the admin page visually consistent without making the AI redesign
+anything.</li>
+<li>✅ <strong>Two crystal-clear visual states (read / unread)</strong>
+— descriptive UX, not vague "make it look like an inbox".</li>
+<li>✅ <strong>"Update only that one card"</strong> — teaches
+<em>targeted DOM updates</em> instead of expensive full reloads.</li>
+<li>✅ <strong>"Only run the admin code if the grid element
+exists"</strong> — defensive script.js that won't break the other 4
+pages.</li>
+</ul>
+<p><strong>Verify:</strong></p>
+<ol type="1">
+<li>Open <code>contact.html</code> and submit 3 test messages.</li>
+<li>Open <code>admin.html</code> — all 3 appear, newest first, with the
+purple "unread" border.</li>
+<li>Click "Mark as Read" on one — the card greys out instantly (no
+reload). Refresh Supabase Table Editor — <code>is_read</code> is
+<code>true</code> for that row.</li>
+<li>Tick "Unread only" — the marked-as-read card disappears from view.
+Untick — it returns.</li>
+</ol>
+<hr />
+<h1 id="prompt-5--protect-your-secrets-before-the-first-git-push">Prompt
+5 — Protect your secrets BEFORE the first <code>git push</code></h1>
+<p><strong>Goal:</strong> make sure your Supabase URL + anon key (and
+any future secret) never end up on GitHub.</p>
+<p><strong>Prompt — copy into Cursor Chat:</strong></p>
+<pre class="text"><code>You are pair-programming with a complete beginner. We&#39;re about to push this
+project to a PUBLIC GitHub repository, so we need to protect secrets first.
+
+Please:
+
+1. Create a .gitignore file in the project root that ignores ALL of the
+   following:
+       supabase-config.js     # contains my API keys
+       .DS_Store              # macOS clutter
+       Thumbs.db              # Windows clutter
+       node_modules/          # if we ever install npm packages
+       .env                   # generic secrets file
+       .env.local             # local-only secrets
+
+2. Create a supabase-config.example.js file with the SAME shape as
+   supabase-config.js but EMPTY string values, so any other developer (or
+   future me on a new laptop) knows which two variables to define:
+
+       const SUPABASE_URL = &quot;&quot;;
+       const SUPABASE_ANON_KEY = &quot;&quot;;
+       const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+3. Write a 2-sentence plain-English explanation, addressed to a beginner,
+   of why we never commit API keys to GitHub — even when they are labelled
+   &quot;anon&quot; or &quot;public&quot;.</code></pre>
+<p><strong>What this changes in your project:</strong></p>
+<ul>
+<li>🟧 <strong>HTML / CSS / JS:</strong> nothing in the website
+code.</li>
+<li>🟩 <strong>New files:</strong> <code>.gitignore</code> (tells Git
+"skip these"), <code>supabase-config.example.js</code> (a safe template
+for other developers).</li>
+<li>🚫 <strong>Side-effect when you run <code>git push</code>:</strong>
+<code>supabase-config.js</code> will stay on your laptop only — it never
+leaves.</li>
+</ul>
+<p><strong>Why the prompt is written this way (prompt-engineering
+lens):</strong></p>
+<ul>
+<li>✅ <strong>Safety first</strong> — runs <em>before</em>
+<code>git init</code> so secrets never enter Git history at all.</li>
+<li>✅ <strong>Both files in one prompt</strong> —
+<code>.gitignore</code> AND <code>.example.js</code> are part of the
+same convention, so we ask for both together.</li>
+<li>✅ <strong>Demand the "why" in plain English</strong> — students
+remember the reason, not just the recipe.</li>
+</ul>
+<p><strong>Verify:</strong> the file tree now shows
+<code>.gitignore</code> and <code>supabase-config.example.js</code>.
+Open both — confirm they look correct.</p>
+<hr />
+<h2
+id="hammer_and_wrench-push-the-project-to-github-terminal-commands--not-a-prompt">🛠️
+Push the project to GitHub (terminal commands — not a prompt)</h2>
+<blockquote>
+<p>First, on github.com, click <strong>New repository</strong> → name it
+<code>aanya-portfolio</code> → set it to <strong>Public</strong> → leave
+"Add a README" UNCHECKED → <strong>Create repository</strong>. Copy the
+HTTPS URL it shows you.</p>
+</blockquote>
+<p>Open Cursor's built-in terminal (<code>Ctrl + </code> ` — the
+backtick key) and run, one at a time:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init                                  <span class="co"># 1. mark this folder as a Git project</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main                        <span class="co"># 2. rename the default branch to &quot;main&quot;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .                                 <span class="co"># 3. stage every file (except those in .gitignore)</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Initial portfolio + Supabase integration&quot;</span>   <span class="co"># 4. snapshot it</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/<span class="op">&lt;</span>your-username<span class="op">&gt;</span>/aanya-portfolio.git</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main                   <span class="co"># 5. send everything up</span></span></code></pre></div>
+<p>Refresh GitHub → your code is live in the repo. From now on the
+update loop is just <code>add → commit → push</code>.</p>
+<hr />
+<h2 id="rocket-deploy-live-with-github-pages-six-clicks">🚀 Deploy live
+with GitHub Pages (six clicks)</h2>
+<ol type="1">
+<li>Your repo on GitHub → <strong>Settings</strong> tab.</li>
+<li>Left sidebar → <strong>Pages</strong>.</li>
+<li><strong>Build and deployment → Branch:</strong> switch from
+<code>None</code> to <code>main</code>, folder <code>/ (root)</code> →
+<strong>Save</strong>.</li>
+<li>Wait 30–60 seconds → refresh the page.</li>
+<li>A green box appears with your live URL:
+<code>https://&lt;your-username&gt;.github.io/aanya-portfolio/</code></li>
+<li>Click it. <strong>You are live on the internet.</strong> Share
+it.</li>
+</ol>
+<p><strong>Your update loop forever after:</strong></p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;describe what you changed&quot;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># wait ~30s, refresh the live URL</span></span></code></pre></div>
+<hr />
+<h1 id="bonus--rapid-prototyping-timer-app-10-minutes-deployed">Bonus —
+Rapid Prototyping: Timer App (10 minutes, deployed)</h1>
+<blockquote>
+<p>The portfolio took two sessions. This proves the <em>prompting</em>
+skill transfers to any small idea.</p>
+</blockquote>
+<p><strong>Setup:</strong> in Cursor → <strong>File → New Window → Open
+Folder</strong> → create a folder called <code>timer-app</code> on your
+Desktop → open it. (Brand-new project, clean slate.)</p>
+<h2 id="prompt-6--timer-v1-build-it">Prompt 6 — Timer v1 (build it)</h2>
+<pre class="text"><code>You are pair-programming with a complete beginner. I want a single-page web
+timer app.
+
+Create 3 files in the current folder — index.html, styles.css, script.js —
+and link styles.css in &lt;head&gt; and script.js just before &lt;/body&gt;.
+
+Features:
+- One big input field where the user types a number of SECONDS.
+- Three buttons: Start, Pause, Reset.
+- A big circular display in the centre showing the remaining time as MM:SS.
+- When the timer reaches 0, play a short alarm sound from this royalty-free
+  URL (use a hidden &lt;audio&gt; element):
+       https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg
+
+Visual style:
+- Dark background #0f172a, neon green digits #34d399, soft glow on the digits.
+- Everything centred on the page; works on mobile (use flexbox + responsive
+  font sizes with clamp()).
+
+Quality bar:
+- It must work properly with NO console errors when I open index.html.
+- Comment every block of code in plain English so a beginner can read it.</code></pre>
+<p><strong>What this changes:</strong> creates 3 brand-new files
+(<code>index.html</code>, <code>styles.css</code>,
+<code>script.js</code>) in the <code>timer-app</code> folder — none of
+your portfolio files are touched.</p>
+<p><strong>Why this prompt:</strong> persona + numbered features + exact
+resource URL + explicit quality bar ("no console errors") leaves zero
+ambiguity.</p>
+<h2 id="prompt-7--timer-v2-iterate-without-breaking">Prompt 7 — Timer v2
+(iterate without breaking)</h2>
+<pre class="text"><code>Improvements to the existing timer (do NOT break existing behaviour):
+
+1. Replace the alarm sound URL with this jingle instead:
+       https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg
+
+2. When the timer is under 10 seconds remaining, the circular display should
+   gently pulse a red glow once per second (use a CSS @keyframes animation,
+   only triggered by a JS class toggle).
+
+3. On hover, all three buttons should lift 2px and gain a subtle drop shadow.
+
+4. Add a small &quot;Quick presets&quot; row directly above the input field, with four
+   pill-shaped buttons: 1m, 5m, 10m, 25m. Clicking a preset fills the input
+   with the equivalent number of seconds (60, 300, 600, 1500).</code></pre>
+<p><strong>Why this prompt:</strong> classic <strong>anchor +
+delta</strong> iteration — four changes, scope locked with "do not break
+existing behaviour".</p>
+<p><strong>Deploy it:</strong> repeat the GitHub + Pages steps. Two
+deployed apps in one day. 🚀</p>
+<hr />
+<h2 id="mortar_board-you-did-it">🎓 You did it</h2>
+<p>You're now a <strong>full-stack developer who ships in a single
+session.</strong></p>
+<p>Pick one piece of homework:</p>
+<ol type="1">
+<li>Add a "Reply via Email" button on each admin card
+(<code>mailto:</code> link pre-filled with the sender's email + subject
+prefixed with "Re:").</li>
+<li>Add <strong>Supabase Auth</strong> so only <em>you</em> (when logged
+in) can see <code>admin.html</code>.</li>
+<li>Buy a custom domain on Namecheap and point it at your GitHub Pages
+URL.</li>
+<li>Build a brand-new tiny app entirely from prompts — and deploy it
+before you sleep.</li>
+</ol>
+<h1 id="part-2--training-guide-trainer-edition">Part 2 — Training Guide
+(Trainer Edition)</h1>
+<h2
+id="learn-web-development-with-ai--from-static-site-to-deployed-full-stack-app">Learn
+Web Development with AI — From Static Site to Deployed Full-Stack
+App</h2>
+<p><strong>Duration:</strong> ~3 hours (with Q&amp;A breaks)
+<strong>Prerequisite:</strong> Part 1 completed. Students arrive with
+the <code>aanya-portfolio</code> folder intact.
+<strong>Outcome:</strong> The same portfolio is now visually stunning
+(Mega Prompt warm-up), backed by a real Supabase database, has an Admin
+Dashboard, lives on GitHub, and is <strong>deployed live</strong> via
+GitHub Pages.</p>
+<hr />
+<h2 id="audience-reminder-read-before-you-teach">Audience reminder (read
+before you teach)</h2>
+<p>The class is <strong>mixed-skill</strong> — some students have never
+written code, some are technical. Every prompt in this Part is written
+so that:</p>
+<ul>
+<li><strong>Non-technical students</strong> can copy, paste, and run
+with confidence — the prompts read like a clear brief, not a spec
+sheet.</li>
+<li><strong>Technical students</strong> still get rigour, because every
+spec inside the prompts uses numbers, hex codes, and named patterns (no
+vague adjectives).</li>
+</ul>
+<p>After each prompt, point students at:</p>
+<ol type="1">
+<li>The <strong>"What this changes"</strong> card (HTML / CSS / JS / new
+files), so they can mentally follow along even if they're not reading
+the code.</li>
+<li>The <strong>"Why the prompt is written this way"</strong> lens,
+which is the prompt-engineering lesson — that is the part that will
+compound for their careers.</li>
+</ol>
+<hr />
+<h2 id="the-bridge-from-part-1">The Bridge from Part 1</h2>
+<blockquote>
+<p>"Yesterday your contact form said <em>'message sent'</em> and lied.
+Today we make it tell the truth — and we put your whole site on the
+internet for real, for free, in three hours. And <strong>before</strong>
+we start, in a single prompt, we're going to give your portfolio a
+glow-up so dramatic you'll genuinely be excited to wire it up."</p>
+</blockquote>
+<p>Recap on whiteboard (2 min):</p>
+<ul>
+<li>Part 1 = <strong>Front-end</strong> (skeleton, skin, brain — but no
+memory).</li>
+<li>Part 2 = <strong>Polish</strong> (Mega Prompt) →
+<strong>Back-end</strong> (memory) → <strong>Version control</strong>
+(history) → <strong>Deploy</strong> (public address).</li>
+</ul>
+<hr />
+<h2 id="how-this-guide-is-structured">How This Guide Is Structured</h2>
+<p>Each unit:</p>
+<ol type="1">
+<li><strong>Concept</strong> — the idea, plain English.</li>
+<li><strong>Prompt</strong> — copy from <code>prompts.md</code>.</li>
+<li><strong>Prompting Strategy</strong> — <em>why</em> the prompt looks
+the way it does (this is the part the room should remember in 5
+years).</li>
+<li><strong>What this changes (HTML/CSS/JS callout)</strong> — explicit,
+so non-technical students can follow along visually.</li>
+<li><strong>Trainer Notes</strong> — what to demo, what to watch for,
+what to say.</li>
+</ol>
+<p>There are <strong>five Q&amp;A breakpoints</strong>. Don't skip
+them.</p>
+<hr />
+<h1 id="gift-module-0--the-mega-prompt-warm-up--15-minutes">🎁 Module 0
+— The Mega Prompt (warm-up · ~15 minutes)</h1>
+<blockquote>
+<p><strong>This is new. Run it first.</strong> It does not introduce a
+new concept; it gives the room a <em>visceral</em> "wow" so the rest of
+Part 2 lands on a beautiful canvas instead of the bare-bones Part 1
+look.</p>
+</blockquote>
+<h3 id="01-concept">0.1 Concept</h3>
+<p>We will use <em>one</em> big consolidated prompt to upgrade the
+visual layer of every page in the Part 1 portfolio: glassmorphism nav,
+animated hero gradient blobs, dark/light theme toggle, scroll-reveal
+animations, gradient text, frosted cards, float-label inputs, a
+projects-page marquee, an animated stats strip on About, and a tiny
+page-load splash.</p>
+<p>No new libraries. No build tools. Same 6 files. Runs by
+double-clicking the HTML.</p>
+<h3 id="02-the-prompt">0.2 The Prompt</h3>
+<p>See <code>mega-prompt.md</code> for the full text. Open it on a
+second monitor and ask a student to read out the <strong>Goal</strong>
+section while you prepare to demo.</p>
+<h3 id="03-prompting-strategy-highlight-to-the-room">0.3 Prompting
+Strategy (highlight to the room)</h3>
+<ul>
+<li>✅ <strong>Consolidation taken to its limit</strong> — what would
+have been 15 separate prompts is one carefully structured one. This is
+<em>the</em> power-move of senior prompting.</li>
+<li>✅ <strong>Numbers, hex codes, durations, easings</strong>
+everywhere → multiple students running it independently will get
+<em>visually consistent</em> results.</li>
+<li>✅ <strong>Two-list structure: "DO" + "DO NOT"</strong> — explicit
+guardrails (no new libraries, do not rename files, do not change copy)
+prevent the AI from "improving" things it shouldn't.</li>
+<li>✅ <strong>Demand deliverables</strong> — the AI is asked to produce
+a short summary of files touched + 3 test instructions + the single most
+impactful change. This converts a build into a learning artefact.</li>
+<li>✅ <strong>Accessibility baked in</strong> —
+<code>prefers-reduced-motion</code> rule is part of the prompt itself;
+nobody adds it later.</li>
+</ul>
+<h3
+id="04-what-this-changes-cheat-sheet-to-project-on-screen-while-it-runs">0.4
+What this changes (cheat-sheet to project on screen while it runs)</h3>
+<ul>
+<li>🟧 <strong>HTML:</strong> theme-toggle button added to nav across
+all 4 pages; <code>.reveal</code> classes sprinkled; marquee on
+Projects; stats strip on About. Content, links, IDs untouched.</li>
+<li>🟦 <strong>CSS:</strong> new design tokens in <code>:root</code> +
+<code>[data-theme="dark"]</code> override; glass nav; animated hero
+blobs + noise; gradient borders on hover; float-label inputs; marquee
+keyframes; reveal keyframes; reduced-motion guard.</li>
+<li>🟨 <strong>JavaScript:</strong> six modules appended on top of
+existing code — theme persistence, scroll progress bar,
+IntersectionObserver reveals, nav shrink-on-scroll, animated number
+counters, page-load splash. Hamburger + form handler from Part 1 left
+untouched.</li>
+<li>🟩 <strong>New files:</strong> none — same 6 files.</li>
+</ul>
+<h3 id="05-trainer-demo-live">0.5 Trainer demo (live)</h3>
+<ol type="1">
+<li>Open the folder in Cursor → Cursor Chat → Agent mode.</li>
+<li>Open <code>mega-prompt.md</code> → copy the entire fenced prompt →
+paste → Enter.</li>
+<li>While Cursor edits, narrate the highlights using the cheat-sheet
+above. Estimated edit time: 2–4 min.</li>
+<li>When it finishes:
+<ul>
+<li>Reload <code>index.html</code> (double-click) → splash → hero blobs
+→ scroll to skills → hover → notice border glow.</li>
+<li>Click moon/sun in the nav → entire site flips. Refresh → theme
+remembered.</li>
+<li>Open <code>about.html</code> → scroll to stats strip → counters tick
+up; timeline rows fade in.</li>
+<li>Open <code>projects.html</code> → marquee scrolling; hover a card →
+image zooms, "View Case Study" slides up.</li>
+<li>Open <code>contact.html</code> → focus an input → label floats;
+submit a test message → existing green success still works.</li>
+<li>Resize the window to phone width → hamburger still functional, grids
+stack.</li>
+</ul></li>
+</ol>
+<h3 id="06-bridge-sentence">0.6 Bridge sentence</h3>
+<blockquote>
+<p><em>"That entire transformation was a single prompt. Now imagine
+running 5 of those in a real product. <strong>That</strong> is what AI +
+a clear brief unlocks. Now let's give this beautiful website a real
+memory."</em></p>
+</blockquote>
+<hr />
+<h2 id="module-1--full-stack-in-one-sentence">Module 1 — Full-Stack in
+One Sentence</h2>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Front-End (Client)</th>
+<th>Back-End (Server)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lives in</strong></td>
+<td>The browser</td>
+<td>A server / cloud</td>
+</tr>
+<tr>
+<td><strong>Made of</strong></td>
+<td>HTML, CSS, JS</td>
+<td>Database, server logic, APIs</td>
+</tr>
+<tr>
+<td><strong>Job</strong></td>
+<td>Show &amp; feel</td>
+<td>Remember &amp; secure</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>Full-Stack Developer</strong> can do both. By the end of
+today, <strong>you</strong> can do both.</p>
+<hr />
+<h2 id="module-2--databases-for-humans">Module 2 — Databases for
+Humans</h2>
+<h3 id="21-the-excel-killer-analogy">2.1 The Excel-killer analogy</h3>
+<p>Ask the room: <em>"Could we just store messages in an Excel
+file?"</em> Let them argue. Then:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Excel</th>
+<th>Real database (Supabase)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1M rows</strong></td>
+<td>crashes laptop</td>
+<td>feels normal</td>
+</tr>
+<tr>
+<td><strong>Two people editing</strong></td>
+<td>one wins, one loses</td>
+<td>both work in parallel</td>
+</tr>
+<tr>
+<td><strong>"Show me all unread from this week"</strong></td>
+<td>filters &amp; formulas</td>
+<td>one SQL line</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-table-anatomy-sketch-on-whiteboard">2.2 Table anatomy (sketch
+on whiteboard)</h3>
+<p>For a contact-form table called <code>form</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>bigint, auto-increment, primary key</td>
+<td>Unique handle for every message</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>timestamptz, default now()</td>
+<td>Sort &amp; track</td>
+</tr>
+<tr>
+<td><code>full_name</code></td>
+<td>text</td>
+<td>User input</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>text</td>
+<td>User input</td>
+</tr>
+<tr>
+<td><code>subject</code></td>
+<td>text</td>
+<td>User input</td>
+</tr>
+<tr>
+<td><code>message</code></td>
+<td>text</td>
+<td>User input</td>
+</tr>
+<tr>
+<td><code>is_read</code></td>
+<td>boolean, default false</td>
+<td>Admin workflow flag</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Trainer tip:</strong> Show this table on slide. The next
+prompt will <em>generate the SQL for exactly this table</em>.</p>
+<hr />
+<h2 id="green_circle-qa-break-1-5-min">🟢 Q&amp;A Break #1 (5 min)</h2>
+<p>Ask: <em>"What other data could you store in a similar table?"</em>
+(Newsletter signups, event RSVPs, bug reports — all the same shape.)</p>
+<hr />
+<h2 id="module-3--generating-sql-with-ai">Module 3 — Generating SQL with
+AI</h2>
+<h3 id="31-concept">3.1 Concept</h3>
+<p>Don't memorise SQL. Describe the table in English, let the AI write
+the <code>CREATE TABLE</code> statement.</p>
+<h3 id="32-prompt-1--generate-sql">3.2 Prompt 1 — Generate SQL</h3>
+<p>See <code>prompts.md</code> → <strong>Prompt 1</strong>.</p>
+<h3 id="33-prompting-strategy">3.3 Prompting Strategy</h3>
+<ul>
+<li>✅ <strong>Persona for the AI</strong> ("Postgres expert helping a
+complete beginner") → output is correct <em>and</em> explained
+simply.</li>
+<li>✅ <strong>Numbered columns + exact types</strong> → zero
+ambiguity.</li>
+<li>✅ <strong>Demand explanation</strong> → Rule #5. This is the moment
+a non-technical student understands "primary key" the way they
+understand "row number in Excel".</li>
+</ul>
+<h3 id="34-what-this-changes">3.4 What this changes</h3>
+<ul>
+<li>Nothing in the website yet.</li>
+<li><strong>Supabase only:</strong> a new table named <code>form</code>
+appears in Table Editor with 7 columns.</li>
+</ul>
+<h3 id="35-trainer-demo--supabase-signup">3.5 Trainer demo — Supabase
+signup</h3>
+<ol type="1">
+<li>Open <strong>supabase.com</strong> → Start your project → sign in
+with GitHub.</li>
+<li><strong>New project</strong> → name: <code>web-dev-with-ai</code> →
+strong DB password (save it!) → region: Mumbai/Singapore.</li>
+<li>Wait ~60s for provisioning.</li>
+<li>Left sidebar → <strong>SQL Editor</strong> → paste the AI-generated
+SQL → <strong>Run</strong>.</li>
+<li>Sidebar → <strong>Table Editor</strong> → confirm <code>form</code>
+table exists with all 7 columns.</li>
+</ol>
+<h3 id="36-optional-row-level-security">3.6 Optional row-level
+security</h3>
+<p>If the room has 10+ minutes of buffer, run <strong>Prompt 1b</strong>
+(RLS). Otherwise mention it as homework — Supabase auto-enables RLS, but
+for the classroom demo we'll temporarily disable it on the table so the
+form can write without auth.</p>
+<hr />
+<h2 id="module-4--connect-front-end-to-the-database">Module 4 — Connect
+Front-End to the Database</h2>
+<h3 id="41-concept">4.1 Concept</h3>
+<p>Two things every client app needs to reach Supabase:</p>
+<ul>
+<li><strong>Project URL</strong> — the address.</li>
+<li><strong>Anon Key</strong> — the public-facing API key.</li>
+</ul>
+<p>Both are in <strong>Supabase → Project Settings → API</strong>. Copy
+them somewhere safe; we'll paste into a config file.</p>
+<h3 id="42-prompt-2--wire-the-contact-form-to-supabase">4.2 Prompt 2 —
+Wire the contact form to Supabase</h3>
+<p>See <code>prompts.md</code> → <strong>Prompt 2</strong>.</p>
+<h3 id="43-prompting-strategy">4.3 Prompting Strategy</h3>
+<ul>
+<li>✅ <strong>Explicit script ordering</strong> ("BEFORE script.js") —
+the invisible-but-critical detail beginners always miss; calling it out
+in the prompt eliminates the bug entirely.</li>
+<li>✅ <strong>Both error and success paths defined</strong> —
+production-grade UX in one prompt.</li>
+<li>✅ <strong>"Do not duplicate the handler"</strong> — locks scope;
+protects Part 1 code.</li>
+<li>✅ <strong>"Do not change element IDs"</strong> — future-proofing
+for the admin dashboard prompt.</li>
+</ul>
+<h3 id="44-what-this-changes-point-at-this-while-cursor-edits">4.4 What
+this changes (point at this while Cursor edits)</h3>
+<ul>
+<li>🟧 <strong>HTML (<code>contact.html</code>):</strong> 2 new
+<code>&lt;script&gt;</code> lines — Supabase CDN in
+<code>&lt;head&gt;</code>, <code>supabase-config.js</code> placed
+<strong>before</strong> <code>script.js</code> at the bottom.</li>
+<li>🟦 <strong>CSS:</strong> untouched.</li>
+<li>🟨 <strong>JS (<code>script.js</code>):</strong> the existing submit
+handler is <em>extended</em> — it now reads values, calls
+<code>supabaseClient.from('form').insert([...])</code>, and branches
+into success / error.</li>
+<li>🟩 <strong>New file:</strong> <code>supabase-config.js</code> (holds
+URL + anon key).</li>
+</ul>
+<h3 id="45-live-test">4.5 Live test</h3>
+<ol type="1">
+<li>Paste actual URL + anon key into
+<code>supabase-config.js</code>.</li>
+<li>Reload <code>contact.html</code> → submit a test message.</li>
+<li>Switch to Supabase → Table Editor → refresh → <strong>the row
+appears live.</strong></li>
+</ol>
+<p>The room should audibly react. This is the moment the project becomes
+<em>real</em>.</p>
+<hr />
+<h2 id="module-5--ai-assisted-debugging-live">Module 5 — AI-Assisted
+Debugging (Live)</h2>
+<p>Expect at least one student to hit a CORS / "supabase is not defined"
+/ wrong key error. Use it. <strong>Don't fix it for them — show them the
+workflow.</strong></p>
+<h3 id="51-the-four-step-debug-loop">5.1 The four-step debug loop</h3>
+<ol type="1">
+<li><strong>Identify</strong> — <code>F12</code> → Console tab → read
+the red text.</li>
+<li><strong>Capture</strong> — copy the exact error message.</li>
+<li><strong>Prompt</strong> — paste the <strong>Prompt 3</strong>
+template from <code>prompts.md</code>.</li>
+<li><strong>Apply</strong> — paste the fix, refresh, verify.</li>
+</ol>
+<h3 id="52-prompting-strategy">5.2 Prompting Strategy</h3>
+<ul>
+<li>✅ <strong>Show, don't tell</strong> — paste the actual error
+verbatim; never paraphrase.</li>
+<li>✅ <strong>"Corrected lines, not the whole file"</strong> —
+minimises noise and accidental regressions.</li>
+<li>✅ <strong>"One habit to avoid this in future"</strong> — every bug
+becomes a 30-second lesson.</li>
+</ul>
+<h3 id="53-what-this-changes">5.3 What this changes</h3>
+<p>Depends on the bug, of course. The common ones today:</p>
+<ul>
+<li>Wrong key in <code>supabase-config.js</code> → fix is one
+string.</li>
+<li>Script-order mistake → fix is reordering two
+<code>&lt;script&gt;</code> tags in <code>contact.html</code>.</li>
+<li>Disabled RLS missed → fix is a one-line policy in Supabase SQL
+editor.</li>
+</ul>
+<hr />
+<h2 id="green_circle-qa-break-2-10-min">🟢 Q&amp;A Break #2 (10
+min)</h2>
+<p>This is the <em>bigger</em> break. Walk the room — most students will
+be debugging here. Celebrate the first student whose row hits the
+database.</p>
+<hr />
+<h2 id="module-6--the-admin-dashboard">Module 6 — The Admin
+Dashboard</h2>
+<h3 id="61-concept">6.1 Concept</h3>
+<p>We just <em>wrote</em> to the database. Now we <em>read</em> from it
+— and update it.</p>
+<h3 id="62-prompt-4--adminhtml">6.2 Prompt 4 — admin.html</h3>
+<p>See <code>prompts.md</code> → <strong>Prompt 4</strong>.</p>
+<h3 id="63-prompting-strategy">6.3 Prompting Strategy</h3>
+<ul>
+<li>✅ <strong>"Reuse the existing nav and design tokens"</strong> —
+keeps the admin page consistent without making the AI redesign
+anything.</li>
+<li>✅ <strong>Two clear visual states (read / unread)</strong> —
+descriptive UX, not vague "make it look like an inbox".</li>
+<li>✅ <strong>"Re-render that one card, not full reload"</strong> —
+gentle introduction to <em>targeted DOM updates</em>.</li>
+<li>✅ <strong>"Only run the admin code if the grid element
+exists"</strong> — defensive JS that won't break the other 4 pages.
+Important pattern to call out: this is how a single
+<code>script.js</code> can serve a multi-page site.</li>
+</ul>
+<h3 id="64-what-this-changes">6.4 What this changes</h3>
+<ul>
+<li>🟧 <strong>HTML:</strong> brand-new <code>admin.html</code> with nav
+(5 links now), header, toolbar, and an empty grid container.</li>
+<li>🟦 <strong>CSS:</strong> new <code>/* === ADMIN === */</code>
+section in <code>styles.css</code> with <code>.admin-grid</code>,
+<code>.admin-card</code>, <code>.admin-card.is-read</code>, line-clamp,
+and the "Unread only" filter rule.</li>
+<li>🟨 <strong>JS:</strong> new admin block (gated on grid existence) —
+fetch, render, mark-as-read, filter; plus <code>timeAgo()</code>
+helper.</li>
+<li>🟪 <strong>Supabase:</strong> SELECT on load; UPDATE on Mark as Read
+click.</li>
+</ul>
+<h3 id="65-trainer-demo">6.5 Trainer demo</h3>
+<ol type="1">
+<li>From <code>contact.html</code>, submit 3–4 test messages.</li>
+<li>Open <code>admin.html</code> → see them appear, newest first.</li>
+<li>Click "Mark as Read" → watch the card visually fade.</li>
+<li>Refresh Supabase Table Editor → <code>is_read</code> flipped to
+<code>true</code> for that row.</li>
+<li>Tick "Unread only" → the read card disappears.</li>
+</ol>
+<hr />
+<h2 id="green_circle-qa-break-3-5-min">🟢 Q&amp;A Break #3 (5 min)</h2>
+<p>Ask: <em>"What is the <strong>one</strong> other admin feature you'd
+want?"</em> Collect 2–3 ideas. Pick the simplest and prompt for it live
+— pure improvisation; great confidence-builder.</p>
+<p>Examples that will probably come up + a one-line prompt for each:</p>
+<ul>
+<li><strong>Search by sender</strong> → <em>"Add a search input in the
+admin toolbar that filters the visible cards by full_name or email
+(client-side, no Supabase call)."</em></li>
+<li><strong>Delete message</strong> → <em>"Add a small ✕ button on each
+card that runs supabaseClient.from('form').delete().eq('id', row.id),
+confirms first, then removes the card from the DOM."</em></li>
+</ul>
+<hr />
+<h2 id="module-7--version-control-with-git--github">Module 7 — Version
+Control with Git &amp; GitHub</h2>
+<h3 id="71-concept--the-moving-houses-analogy">7.1 Concept — the
+moving-houses analogy</h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Real life</th>
+<th>Git command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Stuff scattered in your house</td>
+<td>working directory</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Pile what you want to move in the drawing room</td>
+<td><code>git add .</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pack into labelled boxes</td>
+<td><code>git commit -m "msg"</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Load truck → new house (cloud)</td>
+<td><code>git push</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Git</strong> is the key. <strong>GitHub</strong> is the car.
+Git tracks; GitHub stores.</p>
+</blockquote>
+<h3 id="72-setup-do-once">7.2 Setup (do once)</h3>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># macOS</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Windows: download from git-scm.com/download/win</span></span></code></pre></div>
+<p>Then <strong>once</strong> per machine:</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name  <span class="st">&quot;Your Name&quot;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">&quot;you@example.com&quot;</span></span></code></pre></div>
+<h3 id="73-protect-secrets-first--prompt-5">7.3 Protect secrets first —
+Prompt 5</h3>
+<p><strong>Critical</strong>: before anything else, create a
+<code>.gitignore</code> or your Supabase keys will be public on
+GitHub.</p>
+<p>See <code>prompts.md</code> → <strong>Prompt 5</strong>.</p>
+<h3 id="74-prompting-strategy">7.4 Prompting Strategy</h3>
+<ul>
+<li>✅ <strong>Safety first</strong> — the prompt runs <em>before</em>
+<code>git init</code>, so secrets never enter Git history at all.</li>
+<li>✅ <strong>Both files in one prompt</strong> —
+<code>.gitignore</code> + <code>.example.js</code> are part of the same
+convention; consolidate.</li>
+<li>✅ <strong>Demand the "why" in plain English</strong> — students
+will remember the <em>reason</em> long after they forget the
+syntax.</li>
+</ul>
+<h3 id="75-what-this-changes">7.5 What this changes</h3>
+<ul>
+<li>🟧 <strong>HTML / CSS / JS:</strong> untouched.</li>
+<li>🟩 <strong>New files:</strong> <code>.gitignore</code>,
+<code>supabase-config.example.js</code>.</li>
+</ul>
+<h3 id="76-the-five-terminal-commands-they-will-type">7.6 The five
+terminal commands they will type</h3>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Initial portfolio + Supabase integration&quot;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/<span class="op">&lt;</span>your-username<span class="op">&gt;</span>/aanya-portfolio.git</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div>
+<h3 id="77-trainer-demo--create-the-repo">7.7 Trainer demo — create the
+repo</h3>
+<ol type="1">
+<li>GitHub → <strong>New repository</strong> → name
+<code>aanya-portfolio</code> → <strong>Public</strong> → do NOT
+initialise with README → Create.</li>
+<li>Copy the HTTPS URL.</li>
+<li>In Cursor's integrated terminal (<code>Ctrl + </code> `): run the
+five commands above.</li>
+<li>Refresh GitHub → files appear (but <strong>not</strong>
+<code>supabase-config.js</code> — confirm this by checking the file
+tree; this is the moment <code>.gitignore</code> proves itself).</li>
+</ol>
+<hr />
+<h2 id="module-8--deploy-with-github-pages">Module 8 — Deploy with
+GitHub Pages</h2>
+<h3 id="81-step-by-step-project-on-screen-students-follow">8.1
+Step-by-step (project on screen, students follow)</h3>
+<ol type="1">
+<li>Repo → <strong>Settings</strong> tab.</li>
+<li>Left sidebar → <strong>Pages</strong>.</li>
+<li><strong>Build and deployment → Branch:</strong> change
+<code>None</code> → <code>main</code> · folder <code>/ (root)</code> →
+<strong>Save</strong>.</li>
+<li>Wait 30–60 seconds → refresh → green box:
+<code>Your site is live at https://&lt;username&gt;.github.io/aanya-portfolio/</code></li>
+<li>Click it. <strong>You are live on the internet.</strong></li>
+</ol>
+<h3 id="82-smoke-test">8.2 Smoke test</h3>
+<ul>
+<li>Open the live URL on your phone (mobile responsive check + the Mega
+Prompt animations look great on touch).</li>
+<li>Submit a test message → check Supabase table.</li>
+<li>⚠️ Note: <code>admin.html</code> will <em>not</em> work on the live
+URL until students paste their Supabase keys into a deployed config
+file. For the classroom we keep <code>admin.html</code> as a local-only
+page; productionising it is in the homework (Auth + RLS + env
+management).</li>
+</ul>
+<h3 id="83-iteration-loop-forever-after">8.3 Iteration loop forever
+after</h3>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;describe the change&quot;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># wait ~30s — site auto-updates</span></span></code></pre></div>
+<hr />
+<h2 id="green_circle-qa-break-4-10-min">🟢 Q&amp;A Break #4 (10
+min)</h2>
+<p>This is the <strong>emotional peak</strong> of the course — they have
+a live URL. Let it breathe. Encourage them to share the link on LinkedIn
+/ WhatsApp. Walk around with high-fives.</p>
+<hr />
+<h2 id="module-9--rapid-prototyping-bonus-a-timer-app">Module 9 — Rapid
+Prototyping Bonus: A Timer App</h2>
+<h3 id="91-why-this-module">9.1 Why this module</h3>
+<p>The portfolio took two sessions. The next demo takes <strong>ten
+minutes</strong> — and proves the prompting skill is
+<em>generalisable</em>. Any small idea is now in reach.</p>
+<h3 id="92-setup">9.2 Setup</h3>
+<p>File → New Window → Open Folder → create <code>timer-app</code> on
+Desktop → open in Cursor.</p>
+<h3 id="93-prompt-6--timer-v1">9.3 Prompt 6 — Timer v1</h3>
+<p>See <code>prompts.md</code> → <strong>Prompt 6</strong>.</p>
+<h3 id="94-prompt-7--iterate">9.4 Prompt 7 — Iterate</h3>
+<p>See <code>prompts.md</code> → <strong>Prompt 7</strong>.</p>
+<h3 id="95-prompting-strategy">9.5 Prompting Strategy</h3>
+<ul>
+<li>✅ <strong>Resource URLs provided</strong> — no "find a sound
+effect" hand-waving.</li>
+<li>✅ <strong>"It must work properly with no console errors"</strong> —
+explicit quality bar.</li>
+<li>✅ <strong>Iterative refinement in one prompt</strong> — four
+enhancements, scope-locked with "do not break existing behaviour".</li>
+</ul>
+<h3 id="96-what-this-changes">9.6 What this changes</h3>
+<ul>
+<li>🟩 Three brand-new files in <code>timer-app/</code>. None of the
+portfolio is touched.</li>
+</ul>
+<h3 id="97-deploy-in-60-seconds">9.7 Deploy in 60 seconds</h3>
+<p>Repeat the GitHub + Pages workflow. By the time they walk out of the
+room, students have <strong>two</strong> deployed apps.</p>
+<hr />
+<h2 id="module-10--wrap-up">Module 10 — Wrap-up</h2>
+<h3 id="101-what-you-can-now-do-read-out-loud">10.1 What you can now do
+(read out loud)</h3>
+<ul>
+<li>✅ Run a single mega-prompt that visually transforms an entire
+site.</li>
+<li>✅ Build a multi-page front-end from scratch via prompts.</li>
+<li>✅ Design a database table from plain English.</li>
+<li>✅ Connect a website to a cloud database (Supabase).</li>
+<li>✅ Build admin tooling that reads + updates real data.</li>
+<li>✅ Debug errors with AI as your pair.</li>
+<li>✅ Use Git to track changes and recover from mistakes.</li>
+<li>✅ Push code to GitHub and deploy live with GitHub Pages.</li>
+<li>✅ Spin up a brand-new prototype in ten minutes.</li>
+</ul>
+<p>That is <strong>full-stack web development</strong>. Six months ago
+this was a multi-week curriculum.</p>
+<h3 id="102-where-to-go-next-signpost-dont-teach">10.2 Where to go next
+(signpost; don't teach)</h3>
+<ul>
+<li><strong>Supabase Auth</strong> — let users sign up and log in.</li>
+<li><strong>Row-Level Security</strong> — proper production-grade
+rules.</li>
+<li><strong>Custom domain</strong> — replace
+<code>username.github.io</code> with <code>aanyasharma.com</code>.</li>
+<li><strong>A framework</strong> — when you outgrow plain HTML, look at
+React or Next.js.</li>
+<li><strong>Automation tools</strong> — Make.com, n8n: trigger
+emails/Slack pings when a new row is inserted.</li>
+</ul>
+<h3 id="103-homework-pick-one">10.3 Homework (pick one)</h3>
+<ol type="1">
+<li>Add a "Reply via Email" button on each admin card that opens a
+pre-filled <code>mailto:</code> link.</li>
+<li>Add Supabase Auth so only <em>you</em> (logged in) can see
+<code>admin.html</code>.</li>
+<li>Buy a domain on Namecheap, point it at GitHub Pages.</li>
+<li>Build a <em>new</em> small app entirely from prompts — and deploy
+it.</li>
+</ol>
+<hr />
+<h2 id="green_circle-qa-break-5--final-15-min">🟢 Q&amp;A Break #5 —
+Final (15 min)</h2>
+<p>Common questions to anticipate:</p>
+<ul>
+<li><em>"Is Supabase free forever?"</em> → Generous free tier;
+production projects upgrade only when traffic grows.</li>
+<li><em>"Can I delete a record?"</em> → Yes; same pattern as update,
+just <code>.delete()</code>.</li>
+<li><em>"What if I want to email myself when a message arrives?"</em> →
+Supabase Database Webhooks → Make.com / n8n. (Tease only.)</li>
+<li><em>"Is my anon key dangerous in the repo?"</em> → It is
+<em>designed</em> to be public — but if you ever add a service-role key,
+that one <strong>never</strong> goes in Git. Always.</li>
+<li><em>"Can I use this for a client website?"</em> → Yes. Many
+freelancers ship exactly this stack today.</li>
+</ul>
+<hr />
+<h2 id="appendix--the-five-rules-restated-still-true">Appendix — The
+Five Rules, restated (still true)</h2>
+<ol type="1">
+<li><strong>Numbers beat adjectives.</strong></li>
+<li><strong>Persona before prompt.</strong></li>
+<li><strong>One big prompt &gt; five small ones.</strong></li>
+<li><strong>Iterate with anchor + delta.</strong></li>
+<li><strong>Always demand the "why".</strong></li>
+</ol>
+<blockquote>
+<p>The technologies change every year. These five rules don't.</p>
+<p>Welcome to web development. Go build something.</p>
+</blockquote>
+</body>
+</html>

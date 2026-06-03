@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mohamed Arshad</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation bar: stays fixed at the top while the user scrolls the page -->
+  <nav class="nav" aria-label="Main navigation">
+    <!-- Brand name: identifies the site owner, links back to the home page -->
+    <a href="index.html" class="nav__brand">Mohamed Arshad</a>
+
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <div class="nav__actions">
+      <!-- Page links: grouped on the right so visitors can jump to each section/page -->
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link active">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main class="projects">
+    <header class="projects__header">
+      <h1 class="projects__title">Selected Work</h1>
+      <p class="projects__subtitle">Six projects, three industries, one obsession: clarity.</p>
+    </header>
+
+    <div class="tag-marquee" aria-hidden="true">
+      <div class="tag-marquee__track">
+        <div class="tag-marquee__row">
+          <span class="tag-marquee__pill">Fintech</span>
+          <span class="tag-marquee__pill">Edtech</span>
+          <span class="tag-marquee__pill">Healthcare</span>
+          <span class="tag-marquee__pill">B2B</span>
+          <span class="tag-marquee__pill">A11y</span>
+          <span class="tag-marquee__pill">Design Systems</span>
+          <span class="tag-marquee__pill">Marketplace</span>
+          <span class="tag-marquee__pill">Data Viz</span>
+          <span class="tag-marquee__pill">Internal Tools</span>
+          <span class="tag-marquee__pill">UX Writing</span>
+        </div>
+        <div class="tag-marquee__row" aria-hidden="true">
+          <span class="tag-marquee__pill">Fintech</span>
+          <span class="tag-marquee__pill">Edtech</span>
+          <span class="tag-marquee__pill">Healthcare</span>
+          <span class="tag-marquee__pill">B2B</span>
+          <span class="tag-marquee__pill">A11y</span>
+          <span class="tag-marquee__pill">Design Systems</span>
+          <span class="tag-marquee__pill">Marketplace</span>
+          <span class="tag-marquee__pill">Data Viz</span>
+          <span class="tag-marquee__pill">Internal Tools</span>
+          <span class="tag-marquee__pill">UX Writing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects__grid">
+      <article class="projects__card reveal">
+        <div class="projects__media">
+          <img
+            class="projects__image"
+            src="https://placehold.co/640x360/4f46e5/ffffff?text=Razorpay+Checkout+2.0"
+            alt="Razorpay Checkout 2.0 project preview"
+            width="640"
+            height="360"
+          >
+          <div class="projects__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="projects__body">
+          <h3 class="projects__name">Razorpay Checkout 2.0</h3>
+          <p class="projects__description">Reducing payment drop-offs by 18%.</p>
+          <ul class="projects__tags">
+            <li><span class="projects__tag">Fintech</span></li>
+            <li><span class="projects__tag">Research</span></li>
+            <li><span class="projects__tag">Figma</span></li>
+          </ul>
+          <a href="#" class="projects__link">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="projects__card reveal">
+        <div class="projects__media">
+          <img
+            class="projects__image"
+            src="https://placehold.co/640x360/0ea5e9/ffffff?text=Byju%27s+Onboarding"
+            alt="Byju's Onboarding project preview"
+            width="640"
+            height="360"
+          >
+          <div class="projects__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="projects__body">
+          <h3 class="projects__name">Byju's Onboarding</h3>
+          <p class="projects__description">New-learner activation up 27%.</p>
+          <ul class="projects__tags">
+            <li><span class="projects__tag">Edtech</span></li>
+            <li><span class="projects__tag">UX Writing</span></li>
+            <li><span class="projects__tag">Prototyping</span></li>
+          </ul>
+          <a href="#" class="projects__link">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="projects__card reveal">
+        <div class="projects__media">
+          <img
+            class="projects__image"
+            src="https://placehold.co/640x360/10b981/ffffff?text=Practo+Doctor+Chat"
+            alt="Practo Doctor Chat project preview"
+            width="640"
+            height="360"
+          >
+          <div class="projects__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="projects__body">
+          <h3 class="projects__name">Practo Doctor Chat</h3>
+          <p class="projects__description">HIPAA-friendly chat MVP.</p>
+          <ul class="projects__tags">
+            <li><span class="projects__tag">Healthcare</span></li>
+            <li><span class="projects__tag">IA</span></li>
+            <li><span class="projects__tag">Wireframing</span></li>
+          </ul>
+          <a href="#" class="projects__link">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="projects__card reveal">
+        <div class="projects__media">
+          <img
+            class="projects__image"
+            src="https://placehold.co/640x360/f59e0b/ffffff?text=Zomato+Restaurant+Hub"
+            alt="Zomato Restaurant Hub project preview"
+            width="640"
+            height="360"
+          >
+          <div class="projects__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="projects__body">
+          <h3 class="projects__name">Zomato Restaurant Hub</h3>
+          <p class="projects__description">Self-serve menu manager.</p>
+          <ul class="projects__tags">
+            <li><span class="projects__tag">Marketplace</span></li>
+            <li><span class="projects__tag">Design System</span></li>
+          </ul>
+          <a href="#" class="projects__link">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="projects__card reveal">
+        <div class="projects__media">
+          <img
+            class="projects__image"
+            src="https://placehold.co/640x360/ef4444/ffffff?text=Open+Banking+Dashboard"
+            alt="Open Banking Dashboard project preview"
+            width="640"
+            height="360"
+          >
+          <div class="projects__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="projects__body">
+          <h3 class="projects__name">Open Banking Dashboard</h3>
+          <p class="projects__description">B2B analytics, dark mode first.</p>
+          <ul class="projects__tags">
+            <li><span class="projects__tag">B2B</span></li>
+            <li><span class="projects__tag">Data Viz</span></li>
+          </ul>
+          <a href="#" class="projects__link">View Case Study →</a>
+        </div>
+      </article>
+
+      <article class="projects__card reveal">
+        <div class="projects__media">
+          <img
+            class="projects__image"
+            src="https://placehold.co/640x360/8b5cf6/ffffff?text=Accessibility+Audit+Toolkit"
+            alt="Accessibility Audit Toolkit project preview"
+            width="640"
+            height="360"
+          >
+          <div class="projects__overlay" aria-hidden="true"></div>
+        </div>
+        <div class="projects__body">
+          <h3 class="projects__name">Accessibility Audit Toolkit</h3>
+          <p class="projects__description">Internal tool, 4.2★.</p>
+          <ul class="projects__tags">
+            <li><span class="projects__tag">A11y</span></li>
+            <li><span class="projects__tag">Internal Tools</span></li>
+          </ul>
+          <a href="#" class="projects__link">View Case Study →</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__column">
+        <p class="footer__brand">Mohamed Arshad</p>
+        <p class="footer__tagline">Designing calm products for noisy industries.</p>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Quick links</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Social</p>
+        <ul class="footer__social">
+          <li><a href="https://linkedin.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a></li>
+          <li><a href="https://dribbble.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">🎨</a></li>
+          <li><a href="https://twitter.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a></li>
+          <li><a href="mailto:hello@mohamedarshad.com" class="footer__social-btn" aria-label="Email">✉️</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mohamed Arshad — Built with curiosity and Cursor.<span class="footer__heart" aria-hidden="true"> ♥</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

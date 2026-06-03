@@ -1,0 +1,11 @@
+execute the below github commands for me:
+
+git init        # 1. mark this folder as a Git project
+git branch -M main      # 2. rename the default branch to "main"
+git add .             # 3. stage every file (except those in .gitignore)
+
+git commit -m "Initial portfolio + Supabase integration"   # 4. snapshot it
+
+git remote add origin https://github.com/moharslanew2-byte/arshad-portfolio.git
+
+git push -u origin main    # 5. send everything up

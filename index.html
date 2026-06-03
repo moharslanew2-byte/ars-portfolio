@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Arshad | AI Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation bar: stays fixed at the top while the user scrolls the page -->
+  <nav class="nav" aria-label="Main navigation">
+    <!-- Brand name: identifies the site owner, links back to the home page -->
+    <a href="index.html" class="nav__brand">Mohamed Arshad</a>
+
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <div class="nav__actions">
+      <!-- Page links: grouped on the right so visitors can jump to each section/page -->
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p class="hero__eyebrow">PORTFOLIO 2026</p>
+    <h1 class="hero__headline">I design products people actually enjoy using.</h1>
+    <p class="hero__subheadline">Senior AI Engineer with 2 years of experience in fintech, edtech and healthcare.</p>
+    <a href="projects.html" class="hero__cta btn-shine">See My Work →</a>
+    <div class="hero__scroll" aria-hidden="true"><span class="hero__scroll-dot"></span></div>
+  </section>
+
+  <section class="skills">
+    <h2 class="skills__heading">What I Do</h2>
+    <p class="skills__tagline">A toolkit shaped by 5 years of shipping real products.</p>
+
+    <div class="skills__grid">
+      <!-- User Research -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">🎨</span>
+        <h3 class="skills__name">User Research</h3>
+        <p class="skills__description">Interviews, surveys and usability tests that uncover real user needs.</p>
+      </article>
+
+      <!-- UI Design -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">🖌️</span>
+        <h3 class="skills__name">UI Design</h3>
+        <p class="skills__description">Pixel-perfect interfaces built in Figma with reusable design systems.</p>
+      </article>
+
+      <!-- Information Architecture -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">🧭</span>
+        <h3 class="skills__name">Information Architecture</h3>
+        <p class="skills__description">Clear sitemaps and flows that make complex products feel simple.</p>
+      </article>
+
+      <!-- Prototyping -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">📐</span>
+        <h3 class="skills__name">Prototyping</h3>
+        <p class="skills__description">High-fidelity, clickable prototypes that validate ideas before a single line of code.</p>
+      </article>
+
+      <!-- Accessibility -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">♿</span>
+        <h3 class="skills__name">Accessibility</h3>
+        <p class="skills__description">WCAG-compliant designs that work for everyone, on every device.</p>
+      </article>
+
+      <!-- Design Systems -->
+      <article class="skills__card reveal">
+        <span class="skills__icon" aria-hidden="true">📊</span>
+        <h3 class="skills__name">Design Systems</h3>
+        <p class="skills__description">Scalable component libraries that keep teams shipping fast and consistently.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__column">
+        <p class="footer__brand">Mohamed Arshad</p>
+        <p class="footer__tagline">Designing calm products for noisy industries.</p>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Quick links</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Social</p>
+        <ul class="footer__social">
+          <li><a href="https://linkedin.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a></li>
+          <li><a href="https://dribbble.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">🎨</a></li>
+          <li><a href="https://twitter.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a></li>
+          <li><a href="mailto:hello@mohamedarshad.com" class="footer__social-btn" aria-label="Email">✉️</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mohamed Arshad — Built with curiosity and Cursor.<span class="footer__heart" aria-hidden="true"> ♥</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

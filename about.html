@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mohamed Arshad</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation bar: stays fixed at the top while the user scrolls the page -->
+  <nav class="nav" aria-label="Main navigation">
+    <!-- Brand name: identifies the site owner, links back to the home page -->
+    <a href="index.html" class="nav__brand">Mohamed Arshad</a>
+
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <div class="nav__actions">
+      <!-- Page links: grouped on the right so visitors can jump to each section/page -->
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link active">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main class="about">
+    <header class="about__header">
+      <h1 class="about__title">About Arshad</h1>
+      <p class="about__subtitle">AI Engineer. Researcher. Action-driven optimist.</p>
+    </header>
+
+    <section class="about__stats reveal" aria-label="Career highlights">
+      <div class="about__stat">
+        <p class="about__stat-value"><span class="about__stat-number" data-target="5">0</span>+ years experience</p>
+      </div>
+      <div class="about__stat">
+        <p class="about__stat-value"><span class="about__stat-number" data-target="30">0</span>+ shipped projects</p>
+      </div>
+      <div class="about__stat">
+        <p class="about__stat-value"><span class="about__stat-number" data-target="12">0</span> awards</p>
+      </div>
+    </section>
+
+    <section class="about__bio">
+      <div class="about__bio-grid">
+        <div class="about__photo-frame">
+          <img
+            class="about__photo"
+            src="https://placehold.co/400x400/4f46e5/ffffff?text=Aanya"
+            alt="Portrait placeholder"
+            width="400"
+            height="400"
+          >
+        </div>
+        <div class="about__bio-text">
+          <p>I design products at the intersection of business goals and human emotion. My happiest projects are the ones where a measurable metric (conversion, retention, time-on-task) moves <em>and</em> users send unsolicited thank-you messages.</p>
+          <p>Before design, I trained as a psychology major — which still shows up in how I run research. I believe the best interviews feel like good conversations, not interrogations.</p>
+          <p>When I'm not in Figma, you'll find me sketching in cafés, running ultra-marathons very slowly, or trying (and failing) to keep my plants alive.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about__timeline-section">
+      <h2 class="about__timeline-heading">Career Timeline</h2>
+      <ol class="about__timeline">
+        <li class="about__timeline-entry reveal reveal--delay-1">
+          <span class="about__timeline-year">2024</span>
+          <span class="about__timeline-dot" aria-hidden="true"></span>
+          <div class="about__timeline-content">
+            <p class="about__timeline-role">Senior UX Designer, Razorpay</p>
+            <p class="about__timeline-desc">Leading checkout redesign for 8M users.</p>
+          </div>
+        </li>
+        <li class="about__timeline-entry reveal reveal--delay-2">
+          <span class="about__timeline-year">2022</span>
+          <span class="about__timeline-dot" aria-hidden="true"></span>
+          <div class="about__timeline-content">
+            <p class="about__timeline-role">UX Designer, Byju's</p>
+            <p class="about__timeline-desc">Owned learner onboarding for the K-12 app.</p>
+          </div>
+        </li>
+        <li class="about__timeline-entry reveal reveal--delay-3">
+          <span class="about__timeline-year">2021</span>
+          <span class="about__timeline-dot" aria-hidden="true"></span>
+          <div class="about__timeline-content">
+            <p class="about__timeline-role">Product Designer, Practo</p>
+            <p class="about__timeline-desc">Designed doctor-patient chat MVP.</p>
+          </div>
+        </li>
+        <li class="about__timeline-entry reveal reveal--delay-4">
+          <span class="about__timeline-year">2020</span>
+          <span class="about__timeline-dot" aria-hidden="true"></span>
+          <div class="about__timeline-content">
+            <p class="about__timeline-role">Design Intern, Zomato</p>
+            <p class="about__timeline-desc">Reshaped restaurant onboarding flow.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__column">
+        <p class="footer__brand">Mohamed Arshad</p>
+        <p class="footer__tagline">Designing calm products for noisy industries.</p>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Quick links</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Social</p>
+        <ul class="footer__social">
+          <li><a href="https://linkedin.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a></li>
+          <li><a href="https://dribbble.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">🎨</a></li>
+          <li><a href="https://twitter.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a></li>
+          <li><a href="mailto:hello@mohamedarshad.com" class="footer__social-btn" aria-label="Email">✉️</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mohamed Arshad — Built with curiosity and Cursor.<span class="footer__heart" aria-hidden="true"> ♥</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

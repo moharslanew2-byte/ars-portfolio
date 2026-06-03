@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mohamed Arshad</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation bar: stays fixed at the top while the user scrolls the page -->
+  <nav class="nav" aria-label="Main navigation">
+    <!-- Brand name: identifies the site owner, links back to the home page -->
+    <a href="index.html" class="nav__brand">Mohamed Arshad</a>
+
+    <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span class="nav__toggle-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <div class="nav__actions">
+      <!-- Page links: grouped on the right so visitors can jump to each section/page -->
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <button type="button" class="nav__theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main class="contact">
+    <header class="contact__header">
+      <h1 class="contact__title">Let's build something good.</h1>
+      <p class="contact__subtitle">Project enquiries, mentorship, or just a chai-chat. I reply within 24 hours.</p>
+    </header>
+
+    <section class="contact__layout">
+      <aside class="contact__card reveal">
+        <h2 class="contact__card-heading">Get in touch</h2>
+        <p class="contact__detail">
+          <span class="contact__label">Email</span>
+          <a href="mailto:hello@mohamedarshad.com">hello@mohamedarshad.com</a>
+        </p>
+        <p class="contact__detail">
+          <span class="contact__label">Location</span>
+          Bengaluru, India
+        </p>
+        <ul class="contact__social contact__social--icons">
+          <li><a href="https://linkedin.com" class="contact__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a></li>
+          <li><a href="https://dribbble.com" class="contact__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">🎨</a></li>
+          <li><a href="https://twitter.com" class="contact__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a></li>
+        </ul>
+      </aside>
+
+      <div class="contact__form-panel reveal">
+        <form id="contact-form" class="contact__form">
+          <div class="contact__field contact__field--float">
+            <input type="text" id="full-name" name="fullName" placeholder=" " required autocomplete="name">
+            <label for="full-name">Full Name</label>
+          </div>
+
+          <div class="contact__field contact__field--float">
+            <input type="email" id="email" name="email" placeholder=" " required autocomplete="email">
+            <label for="email">Email Address</label>
+          </div>
+
+          <div class="contact__field contact__field--float">
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected hidden>Select a subject</option>
+              <option value="Project Inquiry">Project Inquiry</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Mentorship">Mentorship</option>
+              <option value="Speaking">Speaking</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="contact__field contact__field--float">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button type="submit" class="contact__submit btn-shine">Send Message</button>
+        </form>
+
+        <p id="contact-success" class="contact__success" hidden>
+          ✅ Thanks! Your message was sent. I'll reply within 24 hours.
+        </p>
+
+        <p id="contact-error" class="contact__error" hidden>
+          Something went wrong. Please try again.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__column">
+        <p class="footer__brand">Mohamed Arshad</p>
+        <p class="footer__tagline">Designing calm products for noisy industries.</p>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Quick links</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <p class="footer__heading">Social</p>
+        <ul class="footer__social">
+          <li><a href="https://linkedin.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a></li>
+          <li><a href="https://dribbble.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">🎨</a></li>
+          <li><a href="https://twitter.com" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">🐦</a></li>
+          <li><a href="mailto:hello@mohamedarshad.com" class="footer__social-btn" aria-label="Email">✉️</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Mohamed Arshad — Built with curiosity and Cursor.<span class="footer__heart" aria-hidden="true"> ♥</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
